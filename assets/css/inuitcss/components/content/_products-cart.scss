@@ -1,0 +1,405 @@
+
+@charset "UTF-8";
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.7.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated.delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animated.delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animated.delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@media (print), (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+
+.ec-cart__sidebar-inner {
+	margin-top: 60px !important;
+	background: #FFF !important;
+	padding: 20px !important;
+	.ec-page-title {
+		margin-top: 0 !important;
+	}
+}
+
+.ec-cart__cert svg {
+	max-width: 48px !important;
+}
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control {
+	input[type="email"] {
+		max-width: 100% !important;
+	}
+}
+
+.ec-cart__sidebar-inner .ec-page-title {
+	margin: 0 !important;
+	padding: 0;
+}
+
+.ecwid-productBrowser-CartPage {
+	.page-title__name
+	 {
+		display: none !important;
+	}
+.ec-cart {
+	position: relative !important;
+	padding-bottom: 98px !important;
+	margin-bottom: 0 !important;
+	&:after {
+		position: absolute;
+		content: "";
+		height: 36px;
+		width: 150vw;
+		left: -50vw;
+		background-color: #FFF;
+		bottom: 0;
+	}
+}
+}
+.ecwid-productBrowser-CartPage {
+	.ec-cart.ec-cart--empty {
+		padding-bottom: 48px !important;
+			&:after {
+				display:none;
+			}
+			.ec-cart__message {
+				display: none !important;
+			}
+	}}
+
+.ec-cart__sidebar {
+	.ec-page-title {
+		margin-top: 0 !important;
+	}
+}
+
+.ec-cart.ec-cart--empty h2 {
+    display: none !important;
+}
+
+
+.ec-cart-step__icon.ec-cart-step__icon--done {
+    display: none;
+    opacity: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $colorZero !important;
+    background: #FFF !important;
+    border-radius: 50%;
+    color: $colorZero !important;	
+    position: relative !important;
+    &:before {
+    background: url(../images/icons/fermes-valens_icons.svg);
+    width: 20px;
+    height: 12px;
+    background-position: -126px -54px;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;	
+    }
+	svg {
+		display: none !important;
+	}
+}
+
+html#ecwid_html body#barba\-wrapper .ecwid .ec-form {
+	input[type="email"],
+	input[type="text"] {
+		max-width: 100% !important;
+	}
+	.form-control__label {
+		bottom: 37px !important;
+		font-size: 10px !important;
+	}
+}
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .ec-link,
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .ec-cart-step--done:hover .ec-link, html#ecwid_html body#barba\-wrapper .ec-size .ec-store .ec-cart-step--done:hover .ec-cart-step__title,
+.ec-cart-step__title {
+	color: $colorTwo !important;
+text-decoration: underline !important;
+
+
+}
+
+html#ecwid_html body#barba\-wrapper .ecwid div, html#ecwid_html body#barba\-wrapper .ecwid span, html#ecwid_html body#barba\-wrapper .ecwid a, html#ecwid_html body#barba\-wrapper .ecwid p {
+	font-family: poppins, sans-serif !important;
+	font-size: 16px !important;
+}
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .ec-radiogroup__item--checked {
+    position: relative;
+    z-index: 1;
+    border-top: none;
+    border-radius: 2px;
+    background-color: rgba(116,143,52,0.07) !important;
+    box-shadow: 0 0 0 1px $colorOne, 0 0 0 1px $colorOne inset !important;
+    cursor: default;
+    border-radius: 0 !important;
+}
+
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store input[type="radio"].form-control__radio:checked+.form-control__radio-view::after {
+	background-color: $colorOne !important;
+	border-color: $colorOne !important;
+}
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .ec-radiogroup__item:not(.ec-radiogroup__item--checked):hover {
+    box-shadow: 0 0 0 1px $colorOne !important;
+    border-radius: 0 !important;
+}
+
+.ecwid-productBrowser-ElmCheckoutShippingAddressPage,
+.ecwid-productBrowser-ElmCheckoutDeliveryPage,
+.ecwid-productBrowser-CheckoutPaymentDetailsPage,
+.ecwid-productBrowser-CartPage {
+.form-control__button {
+	background-color: #82B640 !important;
+	border-radius: 0 !important;
+	border:2px solid $colorTwo !important;
+        padding-right: 80px !important;
+&:after {
+    position: absolute;
+    content: "";
+    right: 16px;
+    top: 50%;
+    background: url(../images/icons/fermes-valens_icons.svg);
+    width: 37px;
+    height: 23px;
+    background-position: -310px -13px;
+    transform: translate(0,-50%);
+}	
+
+&:hover {
+	&:after {
+		top: 11px;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;    
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;  		
+	}
+}
+
+	.form-control__button-text {
+	color: #FFF !important;	
+	}
+	.form-control__loader {
+		display: none !important;
+	}
+}
+}
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .form-control__loader {
+	display: none !important;
+}
+
+
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .form-control__button:focus {
+    animation: none !important;
+}
+
+.ec-form__cell.ec-form__cell--6 {
+	width: auto !important;
+}
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control__button:hover {
+    box-shadow: none !important;
+}
+
+
+.ecwid-productBrowser-ElmCheckoutShippingAddressPage {
+	input[type="text"] {
+		border-color: $colorTwo !important;
+		border-radius: 0 !important;
+		&:active,
+		&:focus {
+			border-color: $colorOne !important;
+		}
+	}
+}
+
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--focus {
+	.form-control__text {
+		box-shadow: 0 0 0 1px $colorTwo inset !important;
+		border-color: $colorZero !important;
+	}	
+}
+
+
+.ecwid span:hover, .ecwid span:focus {
+	color: $colorTwo !important;
+}
+
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--disabled {
+	background-color: #FFF !important;
+	border-radius: 0 !important;
+
+	input {
+		border-radius: 0 !important;
+		border-color: $colorTwo !important;
+	}
+}
+
+
+html#ecwid_html body#barba\-wrapper .ecwid div.ec-related-products__title {
+	font-size: 0 !important;
+}
+
+.ecwid-productBrowser-CartPage 
+{.ec-cart-coupon__buttons {
+.form-control__button {
+    background: #FFF!important;
+    text-indent: -999999px;
+    border: 0 !important;
+    padding-right: 20px !important;
+&:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    background: url(../images/icons/fermes-valens_icons.svg);
+    width: 37px;
+    height: 24px;
+    background-position: -259px -12px;
+    transform: translate(0,-50%);
+}		
+
+&:hover {
+	&:after {
+		top: 8px;
+	}
+}
+
+}}}
+
+
+
+html#ecwid_html body#barba\-wrapper .ecwid div.form-control__select-text {
+	font-size: 12px !important;
+}
+
+
+.grid__search.ec-search.search--has-results {
+	display: none !important;
+}
+
+.ecwid-productBrowser-SignInPage {
+.ec-page-title {
+	min-height: 64px !important;
+}
+}

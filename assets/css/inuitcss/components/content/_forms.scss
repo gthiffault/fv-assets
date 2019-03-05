@@ -1,0 +1,174 @@
+	input[type="text"],
+	input[type="email"],
+	.ecwid-search-widget__input,
+	.gwt-TextBox,
+	.c-file-upload .c-file-select input[type="file"],
+	.c-file-upload {
+		height: 55px !important;
+		border: 1px solid $colorTwo;
+		width: 100% !important;
+		max-width: 442px !important;
+		display: inline-block !important;
+		margin-right: 4px;
+		padding: 0 12px !important;
+		&:focus {
+			outline: none !important;
+		}
+	}
+	html#ecwid_html body#barba\-wrapper .ecwid-search-widget {
+		max-width:100% !important;
+		.ecwid-search-widget__input {
+			border:none !important;
+			margin-bottom: 20px !important;
+			max-width:100% !important;
+		}
+	}			
+	label {
+		font-size: 14px;
+		margin-bottom: 8px;
+		display: inline-block;
+		color: #2A2A2A;
+	}
+	.c-submit {
+		position: relative;
+		display: inline-block;
+		background: #82B640;
+		.c-submit_icon {
+		    position: absolute;
+		    content: "";
+		    right: 16px;
+		    top: 50%;
+		    background: url(../images/icons/fermes-valens_icons.svg);
+		    width: 39px;
+		    height: 23px;
+		    background-position: -308px -12px;
+		    -webkit-transform: translate(0, -50%);
+		    -ms-transform: translate(0, -50%);
+		    transform: translate(0, -50%);
+		    z-index: 0;		
+		}
+		&:hover {
+			.c-submit_icon {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;    
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;  
+  top: 17px;				
+			}
+		}
+	}
+
+
+.c-form {
+	padding-right: $paddingOne;
+	padding-left: $paddingOne;
+	&.-job {
+		h2 {
+			text-align: center;
+		}
+	}
+	.c-background {
+		padding: 80px 0 96px;
+		.c-form_form {
+			background: #FFF;
+			padding: 72px 64px 40px;
+			&:after {
+		  		content: "";
+		  		display: table;
+		  		clear: both;		
+			}			
+			input[type="text"],
+			input[type="email"],
+			textarea {
+				width: 100%;
+				max-width: 100%;
+				margin-bottom: 16px;
+				resize: none;
+			}
+			.c-submit {
+				float: right;
+			}			
+		}
+	}	
+}
+
+.c-form_form {
+	input[type="text"],
+	input[type="email"],
+	.ecwid-search-widget__input,
+	.gwt-TextBox,
+	.c-file-upload .c-file-select input[type="file"],
+	.c-file-upload {
+		max-width: 100% !important;
+	}	
+	 .c-file-upload {
+                font-style: italic;
+                margin-bottom: 16px;
+            }
+            .c-file-upload .c-file-select {
+                display: block;
+                cursor: pointer;
+                text-align: left;
+                overflow: hidden;
+                position: relative;
+            }
+            .c-file-upload .c-file-select .c-file-select-button {
+    display: inline-block;
+    line-height: 60px;
+    float: right;
+    height: 36px;
+    top: 0;
+    margin-top: 6px;
+}
+            .c-file-upload .c-file-select .c-file-select-name {
+                line-height: 34px;
+                display: inline-block;
+                padding: 10px 0;
+            }
+            .c-file-upload .c-file-select input[type="file"] {
+                z-index: 100;
+                cursor: pointer;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            .c-file-upload .c-file-select.c-file-select-disabled {
+                opacity: 0.65;
+            }
+            .c-file-upload .c-file-select.c-file-select-disabled:hover {
+                cursor: default;
+                display: block;
+                color: #34495e;
+                cursor: pointer;
+                height: 40px;
+                line-height: 40px;
+                margin-top: 5px;
+                text-align: left;
+                background: #ffffff;
+                overflow: hidden;
+                position: relative;
+            }
+            .c-file-upload.-letter {
+            	margin-bottom: 48px;
+            }
+            .parsley-errors-list.filled {
+            	list-style-type: none;
+            	margin-left: 0;
+            	li {
+            		font-size: 14px;
+            		margin-top: -12px;
+            		color: #dc3545!important;
+            		* {
+
+            		}
+            	}
+            }
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+	<html lang="{{craft.app.language}}">
+		<head>
+			{% hook 'seo' %}
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="{{ craft.app.sites.primarySite.baseUrl }}assets/css/app.css">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500i,600,700i|Open+Sans" rel="stylesheet">
+		</head>
+		<body id="barba-wrapper">	
+			{% if entry.type == "homePage" or entry.type == "contactUs" or entry.type == "about" %}
+				<div class="c-for-info">
+					<script type='text/javascript' src='https://app.ecwid.com/script.js?4227048'></script> 
+					<script type='text/javascript'>xProductBrowser("defaultCategoryId=8781101");</script>
+				</div>
+			{% endif %}
+			<div  class="barba-container lang-{{craft.app.language}}" data-namespace="page">
+				<header>
+					<div class="o-wrapper">
+						<div class="c-header_nav">
+							<div class="c-header_nav_item -logo">
+								<a href="{{siteUrl}}">Home</a>
+							</div>
+							<div class="c-header_nav_item -menu">
+								<ul class="c-header_nav">
+									<li><a href="http://valens.test/nos-produits#">Commandez en ligne</a></li>
+									<li>
+										<svg class="c-account-management" width="23px" height="25px" viewBox="0 0 23 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										    <title>icon-user</title>
+										    <defs>
+										        <polygon id="path-1" points="0 0 23 0 23 25 0 25"></polygon>
+										    </defs>
+										    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										        <g id="accueil" transform="translate(-1404.000000, -34.000000)">
+										            <g id="header" transform="translate(108.000000, 26.000000)">
+										                <g id="icon-user" transform="translate(1296.000000, 8.000000)">
+										                    <mask id="mask-2" fill="white">
+										                        <use xlink:href="#path-1"></use>
+										                    </mask>
+										                    <g id="Clip-2"></g>
+										                    <path d="M11.503556,13.3913088 C14.7480342,13.3875572 17.376133,10.7345149 17.3735281,7.46570158 C17.3708404,4.19926434 14.7318256,1.54109475 11.4946661,1.54417944 C8.25717573,1.54726413 5.62155146,4.21006076 5.62456989,7.47470554 C5.62762966,10.7436022 8.26217888,13.3950188 11.503556,13.3913088 Z M12.0372387,0 C12.4291793,0.0681549882 12.8248,0.119594288 13.2124818,0.207049435 C16.020942,0.840619873 18.2936521,3.25193085 18.7824306,6.10635346 C19.3253339,9.27654001 17.9827542,12.2415529 15.2478939,13.9126216 C15.2131613,13.9338392 15.1794211,13.956766 15.1142562,13.9989929 C17.469787,14.8206878 19.3801618,16.2171772 20.825244,18.2342731 C22.2674319,20.2473672 22.9763074,22.5051106 23,24.9996665 L21.4832611,24.9996665 C21.3650463,21.543229 19.9656539,18.7516674 17.1437142,16.7444926 C15.3037555,15.4357501 13.2269537,14.8550362 10.981947,14.9806748 C8.35219416,15.1278646 6.10408629,16.1694896 4.28504989,18.0952536 C2.46642697,20.0205174 1.58012584,22.3406215 1.5259182,25 L0,25 C0.0179038202,22.510613 0.728970787,20.2499516 2.17413573,18.2326474 C3.61669573,16.2189697 5.52243955,14.8243977 7.88053393,14.0010771 C7.80250966,13.9497629 7.75032809,13.9131218 7.69595506,13.8801072 C5.14364764,12.3290081 3.69496809,9.35945149 4.16183191,6.475766 C4.68381303,3.25143063 6.53787146,1.17009818 9.64755416,0.243732242 C10.020764,0.132558326 10.4180387,0.10396241 10.8040252,0.036140902 C10.8571991,0.0268451452 10.9095047,0.0121720224 10.9621825,0 L12.0372387,0 Z" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+										                </g>
+										            </g>
+										        </g>
+										    </g>
+										</svg>	
+										<ul class="c-user_sub">
+											<li class="c-ecwid_item c-connect c-link"><a class="gwt-Anchor ecwid-productBrowser-auth-signInLink c-connect">Se connecter</a></li>
+											<li class="c-ecwid_item c-account c-link"><a class="c-account c-ecwid_item">Votre compte</a></li>
+											<li class="c-ecwid_item fuck c-link"><a class="gwt-Anchor fuck ecwid-productBrowser-auth-accountLink c-ecwid_item">Favoris</a></li>
+											<li class="c-ecwid_item c-link"><a class="gwt-Anchor ecwid-productBrowser-auth-signOutLink" c-ecwid_item href="javascript:;">Se déconnecter</a></li>
+										</ul>
+									</li>
+									<li class="c-ecwid_item c-cart">
+										<div class="ec-cart-widget c-cart"></div> 
+										<div>
+											<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?4227048&data_platform=code" charset="utf-8"></script>
+											<script> Ecwid.init();</script>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+				<main class="c-main">
+					{% block content %}{% endblock %}	
+				</main>
+			</div>
+			<script defer  src="{{ craft.app.sites.primarySite.baseUrl }}assets/script/app.js"></script>
+		</body>
+	</html>					
+
+

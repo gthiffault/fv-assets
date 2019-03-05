@@ -1,0 +1,147 @@
+.c-content-delivery {
+	padding-right: $paddingOne;
+	padding-left: $paddingOne;	
+	.c-background {
+		padding-top: 48px;
+		padding-bottom: 64px;
+		text-align: center;
+		h2 {
+			position: relative;
+			padding-top: 80px;
+			&:before {
+			    position: absolute;
+			    content: "";
+			    left: 50%;
+			    transform: translate(-50%,0);
+			    top: 0;
+			    background: url(../images/icons/fermes-valens_icons.svg);		
+			    width: 42px;
+			    height: 37px;
+			    background-position: -73px -11px;			    		
+			}
+		}
+	}
+}
+
+.c-array {
+	display: none;
+}
+
+.c-our-producers_info {
+	text-align: center;
+	.c-our-producers_img {
+	margin-bottom: 48px;
+	}
+	h3 {
+		margin-bottom: 20px !important;
+	}
+}
+
+
+
+.ecwid-AddressBook-blockContainer:first-child {
+	width: 100% !important;
+		.ecwid-AddressBook-block {
+			padding-bottom: 0 !important;
+			height: 120px !important;
+					div.ecwid-AddressBook-addButton {
+						height: 100% !important;
+						width: 100% !important;
+						div {
+							top: 0 !important;
+							padding: 29px 20px !important;
+						}
+					}
+		}		
+}
+
+.ecwid-AddressBook-blockContainer {
+	width: 33% !important;
+
+		.ecwid-AddressBook-block {
+			background: #FFF !important;
+					padding-bottom: 20px !important;	
+		}
+}
+
+
+html#ecwid_html body#barba\-wrapper div.ecwid-fieldWrapper label.ecwid-fieldLabel {
+	width: 100% !important;
+	max-width: 100% !important;
+	text-align: left !important;
+}
+
+html#ecwid_html body#barba\-wrapper div.ecwid-fieldWrapper table {
+	width: 100% !important;
+	max-width: 100% !important;
+	text-align: left !important;
+}
+
+html#ecwid_html body#barba\-wrapper div.ecwid-AddressForm div.ecwid-note {
+  width: 480px !important;
+  max-width: 480px !important;
+}
+
+html#ecwid_html body#barba\-wrapper div.ecwid-EditPersonPopup div.ecwid-popup-content {
+	padding: 5px 20px 20px !important;
+}
+
+html#ecwid_html body#barba\-wrapper div.ecwid-AccountSettings .ecwid-AccountSettings-NameAndEmail, html#ecwid_html body#barba\-wrapper div.ecwid-AccountSettings .ecwid-AccountSettings-TaxId, html#ecwid_html body#barba\-wrapper div.ecwid-AccountSettings .ecwid-AccountSettings-Password,
+.ecwid-form {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+html#ecwid_html body#barba\-wrapper div.ecwid-Orders {
+	max-width: 100% !important;
+}
+
+html#ecwid_html body#barba\-wrapper td.ecwid-OrdersList-OrderBox-header {
+	background-color: $colorFour !important;
+}
+
+
+html#ecwid_html body#barba\-wrapper td.ecwid-OrdersList-OrderBox-cellEven,
+html#ecwid_html body#barba\-wrapper td.ecwid-OrdersList-OrderBox-footer {
+	background-color: #e3e3e3 !important;
+}
+
+html#ecwid_html body#barba\-wrapper td.ecwid-OrdersList-OrderBox-price {
+	color: $colorOne !important;
+}
+
+html#ecwid_html body#barba\-wrapper td.ecwid-DateRangeBox-range {
+	padding: 19px 10px !important;
+}
+
+html#ecwid_html body#barba\-wrapper div.ecwid-Orders-SearchPanel .ecwid-DateRangeBox {
+	margin-left: 16px !important;
+}
+
+html#ecwid_html body#barba\-wrapper div.ecwid-form {
+	background: #FFF !important;
+	margin-bottom: 40px !important;
+}
+
+
+.ecwid-AddressForm {
+	background-color: $colorFour !important;
+}
+
+.c-list-point_li {
+	.c-map-p {
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+	h5 {
+		margin-bottom: 16px;
+	}
+	.marker {
+		color: $colorOne;
+		margin-bottom: 32px;
+		display: inline-block;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

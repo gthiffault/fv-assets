@@ -1,0 +1,129 @@
+.ecwid-productBrowser-categoryPath {
+	display: none !important;
+}
+.c-banner {
+	margin-top: -114px;
+		height: calc(100vh - 72px);
+}
+.c-banner_homepage {
+	height: calc(100vh - 72px);
+	background: red;
+	background-size: cover !important;
+	.o-wrapper {
+		position: relative;
+	}
+	.c-banner_homepage_content {
+		height: calc(100vh - 72px);
+		width: 100%;
+		position: relative;
+		* {
+			color: $colorThree;
+			text-align: center;
+		}
+		.c-banner_homepage_text {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+bottom: 124px;
+			
+		}
+	}
+	.c-banner_homepage_info {
+	    position: absolute;
+	    bottom: -48px;
+	    right: 24px;
+	    padding: 40px 0 56px 80px;
+	    background: rgba(116,143,52,0.8);
+	    &:after {
+	    position: absolute;
+	    content: '';
+	    height: 100%;
+	    width: 50vw;
+	    background: rgba(116,143,52,0.8);
+	    top: 0;
+	    left: 100%;
+	    }
+	}
+}
+
+.c-banner_page {
+	height: 527px;
+	background-size: cover !important;	
+	@include mixingBottom();
+}
+
+
+.c-banner_img {
+	width: 100%;
+}
+
+    .c-roll_logo {
+    width: 198px;
+    max-width: 198px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 48px;
+    z-index: 34;
+}    
+
+.c-roll {
+    position: absolute;
+    transition: top 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    left: 50%;
+    top: 0;
+    height: 500px;
+    width: 118px;
+    background: #46823C;
+    transform: translate(-50%);
+    z-index: 9;
+    &:before {
+    border-style: solid;
+    border-color: #47823c transparent transparent transparent;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -28px;
+    border-width: 28px 59px 0 0;
+    }
+    &:after {
+    border-style: solid;
+	border-color: transparent #47823c transparent transparent;
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -28px;
+	border-width: 0 59px 28px 0;
+    }    
+
+.c-roll_content {
+	position: absolute;
+	width: 100%;
+	bottom: 32px;
+	padding: 0 20px;
+	color: #FFF;
+}	
+p {
+    font-family: satisfy, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    line-height: 24px;
+    &:first-child {
+    	margin-bottom: 42px;
+    	position: relative;
+    	&:after {
+    		position: absolute;
+    		content: "";
+    		width: 22px;
+    		height: 1px;
+    		background: #FFF;
+    		left: 50%;
+    		margin-left: -11px;
+    		bottom: -17px;
+    	}
+    }
+    &:last-child {
+    	margin-bottom: 0;
+    }    
+    }
+}

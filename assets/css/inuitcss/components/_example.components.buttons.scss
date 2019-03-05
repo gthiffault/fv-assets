@@ -1,0 +1,374 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ */
+
+.c-btn,
+.ecwid-btn {
+  display: inline-block !important; /* [1] */
+  vertical-align: middle !important; /* [2] */
+  font: inherit !important; /* [3] */
+  text-align: center !important; /* [4] */
+  margin: 0 !important; /* [4] */
+  cursor: pointer !important; /* [5] */
+  padding: 12px 20px !important;
+  transition: $global-transition !important;
+  border-radius: 0 !important;
+}
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+.c-btn--primary,
+.ecwid-btn--primary {
+  background-color: transparent !important;
+  font-size: 14px !important;
+  line-height: 28px !important;
+  letter-spacing: 0.58px !important;
+  color: $colorTwo !important;
+  box-shadow: none !important;
+  padding:0 0 24px 0 !important;
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none !important; /* [4] */
+    color: $colorTwo !important;
+    border: none !important;
+  }
+
+
+  &:hover,
+  &:focus {
+    background-color: transparent !important;
+    color: $colorZero !important;
+
+  }
+
+}
+
+  .ecwid span {
+  font-size: 16px !important;
+  line-height: 28px !important;
+  letter-spacing: 0.58px !important;
+    color: $colorTwo !important;
+  &:hover,
+  &:focus {
+    color: $colorZero !important;
+  }
+
+
+}
+
+
+.ecwid-btn--primary:hover * {
+      color: $colorZero !important;
+
+}
+
+
+.c-btn--secondary, {
+  background-color: $colorThree !important;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $colorZero !important;
+    border: 1px solid $colorZero !important;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $colorZero !important;
+    color: #fff !important;
+  }
+
+}
+
+
+.c-btn--tertiary,
+.ecwid-btn--secondary,
+.details-product-purchase__controls .form-control__button {
+  background-color: transparent;
+      border: 1px solid $colorThree;
+      color: $colorThree;
+      font-size: 24px !important;
+      padding-right: 80px !important;
+      position: relative !important;
+      &:after {
+          position: absolute;
+          content: "";
+          right: 16px;
+          top: 50%;
+          background: url(../images/icons/fermes-valens_icons.svg);
+          width: 40px;
+          height: 23px;
+          background-position: -310px -13px !important;
+          transform: translate(0,-50%);
+      }
+      &.ecwid-btn--register_popup_button,
+      &.ecwid-btn--change,
+      &.ecwid-btn--delete,
+      &.ecwid-btn--cancel,
+&.ecwid-btn--orders,
+      &.ecwid-btn--clearBag,
+      &.ecwid-btn--continueShopping,
+      &.ecwid-btn--apply {
+          border: 1px solid $colorTwo !important;
+          color: $colorTwo !important;
+          background: #FFF !important;
+          font-size: 18px !important;
+          min-width: 128px !important;
+          text-align: center !important;
+      }      
+      &.-two,
+      &.ecwid-btn--save,
+
+      &.ecwid-btn--secondary-inverse{
+          border: 1px solid $colorTwo !important;
+          color: #FFF !important;
+          background: #82B640 !important;
+          font-size: 18px !important;
+          &:after {
+              background-position: -257px -12px;
+          } 
+      &.ecwid-btn--save {
+        margin-bottom: 40px !important;
+        display: inline-block !important;
+      }                
+      span {
+        color: #FFF!important;
+      }   
+      }
+
+      &.ecwid-btn--clearBag {
+        background: transparent !important;
+      }
+
+      &.ecwid-btn--save,
+      &.ecwid-btn--change,
+      &.ecwid-btn--delete,
+      &.ecwid-btn--secondary-inverse,
+      &.ecwid-btn--register_popup_button,
+      &.ecwid-btn--cancel,
+&.ecwid-btn--orders,
+      &.ecwid-btn--clearBag,
+      &.ecwid-btn--continueShopping,
+      &.ecwid-btn--apply,
+      &.ecwid-btn--changeOptions,
+      &.ecwid-btn--changeAddress {
+        padding-right: 20px !important;
+
+        &:after {
+          display:none;
+        }
+      }
+
+&.ecwid-btn--orders {
+margin-left:41px !important;
+height: 55px !important;      
+}
+      &.ecwid-btn--change {
+        margin-right: 20px !important;
+      }
+      &.ecwid-btn--changeOptions,
+      &.ecwid-btn--changeAddress {
+          border: none !important;
+          color: $colorTwo !important;
+          background: transparent !important;
+          font-size: 14px !important;
+          min-width: 0 !important;
+          text-align: center !important;
+          padding: 0 !important;
+          font-weight: 700 !important;
+      }
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: #4a8ec2;
+  }
+
+  &:hover,
+  &:focus {
+    color: #3774a2;
+  }
+
+}
+
+.ecwid-btn--primary.ecwid-btn--checkout {
+  background-color: transparent;
+      border: 1px solid $colorThree;
+      color: $colorThree;
+      font-size: 24px !important;
+      padding-right: 80px !important;
+      position: relative !important;  
+}
+
+
+.ecwid-popup-content .ecwid-btn--secondary-inverse {
+min-width: 128px !important;
+margin-right: 20px !important;
+}
+
+
+.c-btn--fourth  {
+    background-color: transparent !important;
+    border: 1px solid #2a2a2a;
+    color: #FFF !important;
+    font-size: 18px !important;
+
+
+    position: relative;
+    padding: 13px 20px !important;
+        padding-right: 80px !important;
+        z-index: 1;
+&:after {
+    position: absolute;
+    content: "";
+    right: 16px;
+    top: 50%;
+    background: url(../images/icons/fermes-valens_icons.svg);
+    width: 37px;
+    height: 23px;
+    background-position: -310px -13px;
+    transform: translate(0,-50%);
+}
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: #4a8ec2;
+  }
+
+  &:hover,
+  &:focus {
+    color: #3774a2;
+  }
+
+}
+
+.product-details-module.product-details__action-panel.details-product-purchase {
+.form-control__button {
+  text-align: left !important;
+  background-color: #82B640 !important;
+}
+}
+
+.product-details-module.product-details__action-panel.details-product-purchase.details-product-purchase--in-bag.details-product-purchase--add-more.details-product-purchase--checkout {
+.form-control__button {
+  text-align: left !important;
+  background-color: #FFF !important;
+          &:after {
+              background-position: -257px -12px !important;
+          }   
+}  
+}
+
+.form-control.form-control--button.form-control--large.form-control--primary.form-control--flexible.details-product-purchase__checkout {
+.form-control__button {
+  text-align: left !important;
+  background-color: #82B640 !important;
+          &:after {
+              background-position: -310px -13px !important;
+          }     
+}  
+}
+
+
+/* Size variants
+   ========================================================================== */
+
+.c-btn--small {
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+}
+
+.c-btn--large {
+  padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-large;
+}
+
+
+
+
+
+/* Ghost buttons
+   ========================================================================== */
+
+/**
+ * Ghost buttons have see-through backgrounds and are bordered.
+ */
+
+$btn-ghost-border-width: 2px;
+
+.c-btn--ghost {
+  border: $btn-ghost-border-width solid currentColor;
+  padding: ($inuit-global-spacing-unit-small - $btn-ghost-border-width) ($inuit-global-spacing-unit - $btn-ghost-border-width);
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+  }
+
+  &.c-btn--small {
+    padding: ($inuit-global-spacing-unit-tiny - $btn-ghost-border-width) ($inuit-global-spacing-unit-small - $btn-ghost-border-width);
+  }
+
+  &.c-btn--large {
+    padding: ($inuit-global-spacing-unit - $btn-ghost-border-width) ($inuit-global-spacing-unit-large - $btn-ghost-border-width);
+  }
+
+  &.c-btn--primary {
+    color: #4a8ec2;
+
+    &:hover,
+    &:focus {
+      color: #3774a2;
+    }
+
+  }
+
+  &.c-btn--secondary {
+    color: #2f4054;
+
+    &:hover,
+    &:focus {
+      color: #1d2733;
+    }
+
+  }
+
+  &.c-btn--tertiary {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+
+  }
+
+}

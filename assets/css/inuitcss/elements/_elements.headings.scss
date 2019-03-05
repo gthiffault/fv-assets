@@ -1,0 +1,70 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+
+// We have all of our heading font sizes defined here. Passing these pixel
+// values into our `inuit-font-size()` mixin will generate a rem-based
+// `font-size` with a pixel fallback, as well as generating a `line-height` that
+// will sit on our baseline grid.
+
+$inuit-font-size-h1:  36px !default;
+$inuit-font-size-h2:  28px !default;
+$inuit-font-size-h3:  24px !default;
+$inuit-font-size-h4:  20px !default;
+$inuit-font-size-h5:  18px !default;
+$inuit-font-size-h6:  16px !default;
+
+h1,
+h2.c-page-title {
+  font: 700 64px/72px poppins, sans-serif !important;
+  letter-spacing: 2px !important;
+}
+
+h2,
+html#ecwid_html body#barba\-wrapper .ec-size.ec-size--l .ec-store h1 {
+  font: 700 36px/40px poppins, sans-serif !important;
+  letter-spacing: 2px !important;
+}
+
+h3,
+.ecwid-popup-headLabel {
+  font: 700 24px/36px poppins, sans-serif !important;
+  letter-spacing: 1.2px !important;
+}
+h4 {
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 1.14px;
+	line-height: 56px;
+}
+
+h5 {
+  @include inuit-font-size($inuit-font-size-h5);
+}
+
+h6,
+.ecwid-title {
+  font-size: 18px !important;
+  line-height: 22px !important;
+  letter-spacing: 0.64px !important;
+  color: $colorTwo !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: $colorTwo;
+}
+
+p,
+a,li {
+    font-size: 18px;
+  line-height: 28px;
+letter-spacing: 0.58px;
+font-weight: 400;
+}
+

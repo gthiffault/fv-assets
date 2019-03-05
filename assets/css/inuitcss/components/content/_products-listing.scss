@@ -1,0 +1,267 @@
+.c-our-products {
+	position: relative;
+	.c-background 
+	{padding-bottom: 0 !important;}
+	&:before {
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 36px;
+		background: #FFF;
+		left: 0;
+		top: 0;
+		z-index: 99;
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 36px;
+		background: #FFF;
+		right: 0;
+		top: 0;
+		z-index: 99;
+	}	
+}
+
+
+
+
+
+
+
+.c-products {
+	opacity: 1;
+	.c-products_categories_nav {
+		background: #fff;
+		padding: 32px;
+		ul {
+			list-style-type: none;
+			margin-left: 0;
+			margin-bottom: 0;
+			li:first-child,
+			li:nth-child(2)  {
+				margin-bottom: 24px;
+
+			}
+
+> li:nth-child(2) > .c-parent {
+&:after {
+	display:none;
+			}				
+			}	
+
+
+
+			li {
+				margin-bottom: 8px;
+				.c-parent {
+					margin-bottom: 0 !important;
+					position: relative;
+					display: inline-block;
+color: #2a2a2a;
+    text-decoration: none;
+    line-height: 22px;
+    font-size: 16px;					
+					&:hover {
+						cursor:pointer;
+					}
+					&:after {
+position: absolute;
+    content: "";
+    right: -24px;
+    background: url(../images/icons/fermes-valens_icons.svg);
+    width: 12px;
+    height: 9px;
+    background-position: -129px -68px;
+    top: 50%;
+    margin-top: -4px;
+transition: all 0.3s linear;
+					}
+					&.js-parent-active {
+						&:after {
+							transform: rotateX(180deg);
+
+						}
+					}
+				}				
+			}
+			ul {
+> li:nth-child(2) > .c-parent {
+&:after {
+	display:block;
+			}				
+			}	
+
+			li:first-child,
+			li:nth-child(2)  {
+				margin-bottom: 8px;
+
+			}	
+				margin-left: 16px;
+				ul {
+					margin-left: 16px;
+					display: none;
+					margin-bottom: 20px;
+					li:last-child {
+						margin-bottom:0;
+					}
+				}
+			}
+		}
+		a {
+		    color: #2a2a2a;
+		    text-decoration: none;
+		    line-height: 22px;
+		    font-size: 16px;
+		}
+	}
+
+
+		.ec-page-title {
+			margin-bottom: 40px !important;
+			margin-top: 72px !important;
+		}
+		.grid__products {
+			.grid-product {
+				width: 50% !important;
+				.grid-product__wrap {
+					padding: 24px !important;
+					.grid-product__wrap-inner {
+						background: #FFF !important;
+						.grid-product__title-inner,
+						.grid-product__price,
+						.grid-product__button.grid-product__buy-now {
+							padding: 0 24px !important;
+							text-align: left;
+						}
+						.grid-product__title-inner {
+							padding-top: 24px !important;
+							margin-top: 0 !important;
+							margin-bottom: 16px !important;
+						}						
+						.grid-product__price-amount {
+							font-size: 16px !important;
+							margin-bottom: 12px !important;
+						}
+						.grid-product__button.grid-product__buy-now {
+							margin-bottom: 24px !important;
+							text-align: right !important;
+						}
+						.grid-product__title {
+							margin-top: 0 !important;
+						}
+						.form-control.form-control--button.form-control--small.form-control--secondary.form-control--animated.form-control--done {
+						    margin-top: 0 !important;
+							.form-control__button {
+								min-width: 12px !important;
+							    letter-spacing: 1.44px !important;
+						    	text-decoration: none !important;
+						    	color: #2A2A2A !important;
+						    	// padding-right: 48px !important;		
+						    	position: relative !important;
+								font-weight: 700 !important;
+								box-shadow: none !important;
+								border-radius: 0 !important;
+								min-height: 28px !important;
+						    	// &:after {
+								   //  position: absolute;
+								   //  content: "";
+								   //  right: 0;
+								   //  top: 10px;
+								   //  background: url(../images/icons/fermes-valens_icons.svg);
+								   //  width: 29px;
+								   //  height: 10px;
+								   //  background-position: -220px -20px;   
+								   //  } 		
+							}						    
+						}
+					}
+				}			
+
+			}
+		}
+	}
+
+
+
+
+
+	.c-sidebar {
+		display: none;
+	}	
+
+
+
+.grid__categories {
+	display: none !important;
+}
+
+.-js-c-category  {
+	.c-sidebar,
+	.c-product_info {
+		display: inline-block;
+	}
+
+.c-sidebar,
+.ecwid-productBrowser-CategoryPage {
+	padding-bottom: 48px !important;
+}
+
+	&.c-products {
+		opacity: 1;
+		.c-product_info {
+			width: 60%;	
+		}
+	}
+}	
+html#ecwid_html body#barba\-wrapper div.ecwid-productBrowser-CategoryPage {
+	padding-bottom: 48px !important;
+}
+.-js-c-product {
+	.c-sidebar {
+		display: none;
+	}	
+	&.c-products {
+		opacity: 1;
+	}
+}
+
+
+.ec-breadcrumbs {
+	display: none !important;
+}
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store.ec-store__checkout-page .ec-cart__sidebar-inner {
+	position: static !important;
+}
+
+.about,
+.homePage,
+.career,
+.delivery,
+.contactUs,
+.pointsSale {
+	.popupContent {
+		display: none !important;
+	}
+}
+
+
+.ec-cart__sidebar-inner .ec-page-title h1,
+.ec-cart__body-inner .ec-page-title h1 {
+	display: none !important;
+}
+
+
+
+
+div#ecwid_yotpo_rating a {
+	color: #2A2A2A !important;
+	text-decoration: underline !important;
+}
+
+.ecwid-search-widget.ecwid-search-widget--collapsed {
+	margin-bottom: 20px !important;
+	display: inline-block !important;
+}

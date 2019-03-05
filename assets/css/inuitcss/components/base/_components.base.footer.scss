@@ -1,0 +1,125 @@
+.c-footer {
+	padding-right: $paddingOne;
+	padding-left: $paddingOne;	
+	.c-footer_wrap {
+		background: #373737;
+		padding: 96px 0 72px 0;
+		.c-grid {
+  			display: grid;
+  			grid-template: repeat(2, [row] minmax(120px, 1fr)) / repeat(10, [col] 1fr);
+			grid-gap: 0 36px;		
+			.c-grid_item {
+				position: relative;
+				display: flex;
+				flex-direction: column;	
+				padding: 0 8px;
+				padding-top: 24px;
+				&.-one {
+					grid-column: col 1 / span 2;
+					grid-row: row 1 / span 2;					
+				}
+				&.-two {
+					grid-column: col 3 / span 3;
+					grid-row: row 1 / span 2;					
+				}	
+				&.-three {
+					grid-column: col 6 / span 3;
+					grid-row: row 1 /span 2;	
+					padding-right: 36px;		
+					&:before {
+						position: absolute;
+						content: "";
+						width: 2px;
+						height: 100%;
+						background: #FFF;
+						left: -36px;
+						top: 0;
+					}							
+				}
+				&.-four {
+					grid-column: col 9 / span 2 ;
+					grid-row: row 1 / span 1;				
+					position: relative;
+										padding-top: 24px;
+					&:before {
+						position: absolute;
+						content: "";
+						width: 2px;
+						height: calc(100% + 24px);
+						background: #FFF;
+						left: -36px;
+						top: 0;
+					}
+					&:after {
+						position: absolute;
+						content: "";
+						width: calc(100% + 36px);
+						height: 2px;
+						background: #FFF;
+						left: -36px;
+						bottom: 0;
+					}						
+				}
+				&.-five {
+					grid-column: col 9 / span 2;
+					grid-row: row 2 / span 1;	
+					padding-top: 24px;
+					&:before {
+						position: absolute;
+						content: "";
+						width: 2px;
+						height: calc(100% + 24px);
+						background: #FFF;
+						left: -36px;
+						top: -24px;
+					}										
+				}				
+				.c-fid {
+					display: grid;
+				}												
+			}
+		}
+		.c-social-media {
+			margin-bottom: 0;
+			li {
+				display: inline-block;	
+				height: 25px;
+				width: 25px;
+				margin-left: 28px;
+				a {
+				    text-indent: -99999px;
+				    display: block;
+				    background: url(../images/icons/fermes-valens_icons.svg);
+				    width: 26px;
+				    height: 26px;
+
+				    margin: 0 auto;
+				    &.c-social-media_facebook {
+				    	background-position: -39px -53px;
+				    }
+				    &.c-social-media_linkedin {
+				    	background-position: -78px -53px;
+				    }				    
+				}
+				&:first-child {
+					margin-left:0;
+				}
+			}
+			
+		}
+		.c-footer_title {
+			font-weight: 700;
+			font-family: 'Montserrat', sans-serif;
+		}
+	* {
+		color: #FFF;
+	}		
+
+	}
+.c-footer_copyright {
+	background: #46813B;
+	color: #FFF;
+	text-align: center;
+	padding: 18px 0;
+}
+}

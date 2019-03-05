@@ -1,0 +1,46 @@
+.c-job-information_div {
+	margin-bottom: 72px;
+	&:last-child {
+		margin-bottom:-24px !important;
+	}
+}
+
+.c-job-form {
+	h2 {
+		text-align: center;
+	}
+}
+.c-career-list {
+		padding-right: $paddingOne;
+	padding-left: $paddingOne;
+}
+
+
+.c-jobs-available_ul {
+	li {
+		&:first-child {
+			border-top: 1px solid $colorTwo;	
+		}
+		border-bottom: 1px solid $colorTwo;
+
+			a {
+				text-decoration: none;
+		h3 {
+			margin-top: 24px;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: "";
+				background: url('../images/icons/fleche-droite.svg');
+				width: 16px;
+				height: 30px;
+				right: 16px;
+				top: 0;
+				background-size: cover !important;
+				top: 50%;
+				transform: translate(0,-50%);
+			}
+		}				
+			}		
+	}
+}

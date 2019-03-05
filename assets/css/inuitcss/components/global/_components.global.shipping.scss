@@ -1,0 +1,158 @@
+/* Repeat 3 rows named "row", each between 120px and 1fr tall */
+/* Repeat 4 columns named "col", each 1fr wide */
+.grid-container {
+  	display: grid;
+  	grid-template: repeat(3, [row] minmax(120px, 1fr)) / repeat(4, [col] 1fr);
+	grid-gap: 36px;
+}
+
+.c-services_shipping,
+.c-services_img-one,
+.c-services_shop,
+.c-services_img-two,
+.c-services_practice,
+.c-services_customer-area {
+  align-items: center !important;
+  justify-items: center !important;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.c-services_shipping,
+.c-services_customer-area {
+  padding: 72px 32px;
+}
+
+.c-services_shop,
+.c-services_practice {
+  padding: 72px 28px;
+}
+
+.c-services_shipping,
+.c-services_shop,
+.c-services_practice,
+.c-services_customer-area {
+  &:before {
+  	position: absolute;
+  	content: "";
+  	right: 28px;
+  	top: 24px;
+  	background: url('../images/icons/fermes-valens_icons.svg');
+  }
+}
+
+.c-services_shipping {
+  grid-column: col 1 / span 2;
+  grid-row: row 1;
+  background: #EDF6E5;
+  &:before {
+  	width: 63px;
+  	height: 31px;
+  	background-position: 0px -11px;
+  }
+}
+
+.c-services_img-one {
+  grid-column: col 3;
+  grid-row: row 1 / span 2;
+  opacity: 0.8;
+}
+
+.c-services_shop {
+  grid-column: col 4;
+  grid-row: row 1 / span 2;
+  background: #F0F3FA;
+  z-index: 1;
+  opacity: 0.8;
+  &:before {
+    width: 42px;
+    height: 37px;
+    background-position: -73px -11px;
+  }  
+}
+
+.c-services_img-two {
+  grid-column: col 1;
+  grid-row: row 2 / span 2;
+}
+
+.c-services_practice {
+  grid-column: col 2;
+  grid-row: row 2 / span 2;
+  background: #FCF7F1;
+  &:before {
+    width: 41px;
+    height: 49px;
+    background-position: -170px 0;  
+}
+}
+
+.c-services_customer-area {
+  grid-column: col 3 / span 2;
+  grid-row: row 3;
+  background: #EDF6E5;
+  &:before {
+    width: 38px;
+    height: 38px;
+    background-position: -123px -6px;
+  }  
+}
+
+
+.c-services_img-one,
+.c-services_img-two {
+background-size: cover !important;
+}
+
+
+.c-services_wrap {
+	display: grid;
+	margin: 0 auto;
+  	align-items: center !important;
+  	justify-items: center !important;	
+  	&.-one {
+  		.c-services_wrap-one_content {
+  			text-align: left;
+  			max-width: 540px;
+  		}  		
+  	}
+  	&.-two {
+  		.c-services_wrap-one_content {
+  			text-align: left;
+  			max-width: 612px;
+  		}  		
+  	}  
+  	&.-three {
+  		.c-services_wrap-one_content {
+  			text-align: left;
+  			max-width: 278px;
+  		}  		
+  	}    		
+  p {
+  	margin-bottom: 0;
+  }
+
+}
+
+
+.c-services_link {
+	position: absolute;
+	bottom: 24px;
+	right: 28px;
+  font-weight: 700;
+	letter-spacing: 1.44px;
+	text-decoration: none;
+	color: $colorTwo;
+	padding-right: 48px;
+  &:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 9px;
+    background: url(../images/icons/fermes-valens_icons.svg);
+    width: 29px;
+    height: 10px;
+    background-position: -220px -20px; 	
+  }	
+}

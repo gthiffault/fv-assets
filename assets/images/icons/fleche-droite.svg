@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="15px" viewBox="0 0 8 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>fleche-droite</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="items-visuel-web" transform="translate(-903.000000, -845.000000)" fill="#000000">
+            <g id="fleche-droite" transform="translate(903.000000, 845.000000)">
+                <path d="M0.901771337,14.8448276 C0.798711755,14.9482759 0.669887279,15 0.528180354,15 C0.38647343,15 0.257648953,14.9482759 0.154589372,14.8448276 C-0.0515297907,14.637931 -0.0515297907,14.3017241 0.154589372,14.0948276 L6.72463768,7.5 L0.154589372,0.905172414 C-0.0515297907,0.698275862 -0.0515297907,0.362068966 0.154589372,0.155172414 C0.360708535,-0.0517241379 0.695652174,-0.0517241379 0.901771337,0.155172414 L7.84541063,7.125 C8.05152979,7.33189655 8.05152979,7.66810345 7.84541063,7.875 L0.901771337,14.8448276 Z" id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
