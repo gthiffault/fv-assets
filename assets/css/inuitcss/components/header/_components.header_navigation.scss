@@ -3938,7 +3938,7 @@ header {
     position: fixed;
     width: 100%;
     padding-top: 0;
-    background: #FFF;
+    background: rgba(255,255,255,0.95);
     	transition: background 0.1s 0.05s linear;
     z-index: 9993;	
     .c-header_nav {
@@ -3955,7 +3955,7 @@ header {
 .homePage {
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
-background: $colorTwo;
+background: rgba(26,26,26,0.95);
 transition: background 0s 0s linear;
 }	
 }
@@ -4017,4 +4017,12 @@ transition: background 0s 0s linear;
 	background: #FFF;
 	top: 0;
 	right: 0;
+}
+
+.c-menu-001.animated.headroom.headroom--not-top.headroom--bottom.headroom--unpinned{
+    position: fixed;
+    top: 0;
+    display: block;
+    visibility: hidden;
+    display: none;
 }

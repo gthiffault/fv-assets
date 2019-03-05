@@ -4883,7 +4883,7 @@ header {
   position: fixed;
   width: 100%;
   padding-top: 0;
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.95);
   -webkit-transition: background 0.1s 0.05s linear;
   transition: background 0.1s 0.05s linear;
   z-index: 9993; }
@@ -4897,7 +4897,7 @@ header {
 
 .homePage .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
 .homePage .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
-  background: #2A2A2A;
+  background: rgba(26, 26, 26, 0.95);
   -webkit-transition: background 0s 0s linear;
   transition: background 0s 0s linear; }
 
@@ -4944,6 +4944,13 @@ header {
   background: #FFF;
   top: 0;
   right: 0; }
+
+.c-menu-001.animated.headroom.headroom--not-top.headroom--bottom.headroom--unpinned {
+  position: fixed;
+  top: 0;
+  display: block;
+  visibility: hidden;
+  display: none; }
 
 .c-home_special {
   margin-bottom: 60px; }

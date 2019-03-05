@@ -2280,5 +2280,10 @@ var myElement = document.querySelector(".c-menu-001");
 var headroom  = new Headroom(myElement);
 // initialise
 headroom.init({
-	  offset : $(window).innerHeight()
+
 }); 
+
+		$(".c-menu-001").headroom({});
+
+
+
