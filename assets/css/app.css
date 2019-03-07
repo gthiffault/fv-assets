@@ -2143,25 +2143,25 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
       color: #2A2A2A;
       text-decoration: none; }
 
-.js-menu-active .c-header_nav svg.icon-default path {
-  stroke: #fff !important;
-  -webkit-transition: stroke 0.2s ease 0s, all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
-  transition: stroke 0.2s ease 0s, all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important; }
-
-.js-menu-active .c-account-management_svg path {
-  fill: #fff;
-  -webkit-transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-
-.js-menu-active .c-header_nav .c-header_nav_item.-menu li {
-  border-color: #FFF;
-  -webkit-transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-
-.js-menu-active .c-menu_main li.c-language-switcher a {
-  color: #FFF;
-  -webkit-transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.js-menu-active {
+  overflow-y: hidden;
+  overflow-y: hidden; }
+  .js-menu-active .c-header_nav svg.icon-default path {
+    stroke: #fff !important;
+    -webkit-transition: stroke 0.2s ease 0s, all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
+    transition: stroke 0.2s ease 0s, all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important; }
+  .js-menu-active .c-account-management_svg path {
+    fill: #fff;
+    -webkit-transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  .js-menu-active .c-header_nav .c-header_nav_item.-menu li {
+    border-color: #FFF;
+    -webkit-transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  .js-menu-active .c-menu_main li.c-language-switcher a {
+    color: #FFF;
+    -webkit-transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 
 .c-home .c-header_nav svg.icon-default path {
   stroke: #FFF !important; }
@@ -2250,6 +2250,7 @@ header {
 
 .js-menu-active {
   top: 0;
+  overflow-y: hidden;
   width: 100%; }
   .js-menu-active .c-menu {
     top: 36px;

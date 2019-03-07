@@ -107,6 +107,8 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
 	}
 }	
 .js-menu-active   {
+	overflow-y: hidden;
+	overflow-y: hidden;
 	.c-header_nav svg.icon-default path {
 		stroke: #fff !important;
 		    transition:stroke .2s ease 0s, all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
@@ -250,6 +252,7 @@ header {
 
 .js-menu-active {
 	top: 0;
+	overflow-y: hidden;
 	width: 100%;
 	.c-menu {
 	top: 36px;
