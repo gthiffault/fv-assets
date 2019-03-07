@@ -155,7 +155,7 @@
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
     }  
-    
+
 
 }
 
@@ -167,12 +167,36 @@
     }
 
 
+.js-menu-active {
+    .hamburger .hamburger-box:before,
+    .hamburger .hamburger-label:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    }
+}
+.js-menu-active {
+.hamburger .hamburger-box,
+.hamburger .hamburger-label
+ {
+  &:before {
+    background: #46823C;
+    transition: background 0.2s 0.35s linear;
+  }
+}  
+}
+
 
 .c-submit {
 &:before {
     background: #46823C;
 }
 }
+
+
+
+
+
+
 
 .homePage {
 .hamburger .hamburger-box,
