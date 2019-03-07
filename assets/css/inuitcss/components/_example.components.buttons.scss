@@ -151,6 +151,11 @@
 
 }
 
+&:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    }  
+    
 
 }
 
@@ -168,6 +173,16 @@
     background: #46823C;
 }
 }
+
+.homePage {
+.hamburger .hamburger-box,
+.hamburger .hamburger-label {
+&:before {
+    background: #46823C;
+}
+}
+}
+
 
 .c-btn--tertiary,
 .ecwid-btn--secondary,
