@@ -4922,11 +4922,7 @@ header {
 
 .js-menu-active .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
 .js-menu-active .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
-  top: 36px;
-  -webkit-animation-name: slideinAlready;
-  animation-name: slideinAlready;
-  -webkit-transition: slideinAlready 0.1s linear;
-  transition: slideinAlready 0.1s linear; }
+  top: 36px; }
 
 .c-menu-001:before {
   position: absolute;

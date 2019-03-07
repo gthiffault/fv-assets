@@ -3993,9 +3993,7 @@ transition: background 0s 0s linear;
 	.c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
 	.c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
     top: 36px;
-  -webkit-animation-name: slideinAlready;
-  animation-name: slideinAlready;    
-  transition: slideinAlready 0.1s linear;
+
 	}
 }
 

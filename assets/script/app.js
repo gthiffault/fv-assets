@@ -17,7 +17,7 @@ try{var _xnext_included;if(window.console||(window.console={log:function(){},err
   window.ec = window.ec || Object();
   window.ec.storefront = window.ec.storefront || Object();
   window.ec.storefront.show_breadcrumbs = false; // hides the sign in link
-  window.ec.storefront.show_footer_menu = false; // hides the sign in link
+  window.ec.storefront.show_footer_menu = true; // hides the sign in link
 window.ec.storefront.product_list_show_sort_viewas_options = false; // hides the sign in link
 
 
@@ -2053,7 +2053,7 @@ var zP = $('.c-zip-code').html();
   		}
   		} else {
   			bool = false;
-  			$('.c-state').html('Veuillez entrer votre Code postal');
+  			$('.c-state').html('Calcul des frais de livraison :');
   		}
 
 
@@ -2283,7 +2283,12 @@ headroom.init({
 
 }); 
 
-		$(".c-menu-001").headroom({});
+		$(".c-menu-001").headroom({
+			tolerance:40
+		});
 
 
+$('.footer__link--sign-out').on('click', function() {
+$.cookie("name", null, { path: '/' });
+})
 
