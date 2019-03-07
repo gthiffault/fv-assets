@@ -16,9 +16,9 @@ try{var _xnext_included;if(window.console||(window.console={log:function(){},err
 
   window.ec = window.ec || Object();
   window.ec.storefront = window.ec.storefront || Object();
-  window.ec.storefront.show_breadcrumbs = false; // hides the sign in link
+  window.ec.storefront.show_breadcrumbs = true; // hides the sign in link
   window.ec.storefront.show_footer_menu = true; // hides the sign in link
-window.ec.storefront.product_list_show_sort_viewas_options = false; // hides the sign in link
+window.ec.storefront.product_list_show_sort_viewas_options = true; // hides the sign in link
 
 
   	$('.c-favorite').on('click',function() {
@@ -2268,7 +2268,7 @@ var controllerThree = new  ScrollMagic.Controller({globalSceneOptions: {triggerH
 					.addTo(controller);
 
 	new ScrollMagic.Scene({triggerElement: ".c-banner c-border"})
-					.setTween(".c-banner_homepage_text_line-one", {y: "-320%",opacity: "0.6", ease: Power4.easeNone})
+					.setTween(".c-banner_homepage_text_line-one", {y: "-320%", ease: Power4.easeNone})
 					.addIndicators()
 					.addTo(controller);															
 

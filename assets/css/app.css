@@ -2371,6 +2371,7 @@ header {
     header .c-menu .c-menu_wra {
       padding: 0 36px; }
       header .c-menu .c-menu_wra ul {
+        list-style-type: none;
         margin: 0; }
         header .c-menu .c-menu_wra ul li {
           margin-bottom: 56px; }

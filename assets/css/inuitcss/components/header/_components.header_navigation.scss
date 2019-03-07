@@ -231,6 +231,7 @@ header {
 	.c-menu_wra {
 	padding: 0 36px;
 	ul {
+		list-style-type: none;
 		margin: 0;
 		li {
 			margin-bottom: 56px;
@@ -3941,7 +3942,7 @@ header {
     position: fixed;
     width: 100%;
     padding-top: 0;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.7c-menu_wra);
     	transition: background 0.1s 0.05s linear;
     z-index: 9993;	
     .c-header_nav {
