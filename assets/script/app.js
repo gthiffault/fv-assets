@@ -456,9 +456,6 @@ setTimeout(function() {
    console.log("Current page is of type: " + page.type);
     if (page.type == "CATEGORY" || page.type == "SEARCH"|| page.type == "FAVORITES") { 
     	$('.c-products').addClass('-js-c-category');
-    	$('.ecwid-productBrowser-head h2').remove();
-    	  	$('.ecwid-productBrowser-head').append('<h2>' + $('.ecwid-productBrowser-head').html() + '</h2');
-
 $('html').addClass('js-ecwid-page');
 
 
@@ -635,11 +632,8 @@ setTimeout(function() {
    console.log("Current page is of type: " + page.type);
     if (page.type == "CATEGORY" || page.type == "SEARCH"|| page.type == "FAVORITES") { 
     	$('.c-products').addClass('-js-c-category');
-    	$('.ecwid-productBrowser-head h2').remove();
-
-    	  	$('.ecwid-productBrowser-head').append('<h2>' + $('.ecwid-productBrowser-head').html() + '</h2');
-
-$('h1').text('Nos produits').html();
+			$('.c-page_wrap .o-wrap-six h1').remove();
+			$('.c-page_wrap .o-wrap-six h2').remove();
 $('html').addClass('js-ecwid-page');
 			$('.c-page_wrap .o-wrap-six').append('<h2 class="c-page-title">' + "Nos produits"  + '</h2');	
 
@@ -1808,13 +1802,69 @@ if($('.c-delivery').length) {
   					bounds.extend(poly.getPath().getAt(pathidx));
 				}
 
-			    if(i == 0 ) { // Villeray
-					multiply(45.545496, -73.624133);
-				} else if (i == 1) {
-					multiply(45.506607, -73.553869);
-				} else if (i == 2) {
-					multiply(45.646857, -73.842443);
-			    }		
+if(i == 0 ) { 			// Repentigny
+	multiply(45.758176, -73.440265);
+} else if (i == 1) { 	// Bromont
+	multiply(45.308875, -72.699856);
+} else if (i == 2) { 	// Salaberry-de-Valleyfield
+	multiply(45.268913, -74.053412);
+} else if (i == 3) { 	// Huntingdon
+	multiply(45.088272, -74.178329);
+} else if (i == 4) { 	// Ouest de l’île
+	multiply(45.413554, -74.096312);
+} else if (i == 5) {	// Plateau Mont-Royal
+	multiply(45.522093, -73.586216);
+} else if (i == 6) {	// Ahuntsic / Saint-Léonard / Anjou
+	multiply(45.570596, -73.616295);
+} else if (i == 7) {	// Laval
+	multiply(45.566032, -73.714678);
+} else if (i == 8) {	// Québec
+	multiply(46.823993, -71.208637);
+} else if (i == 9) {	// Outremont
+	multiply(45.516115, -73.605223);
+} else if (i == 10) {	// Laurentides
+	multiply(46.154614, -74.555313);
+} else if (i == 11) {	// Gatineau
+	multiply(45.487806, -75.701773);
+} else if (i == 12) { 	// Sainte-Thérèse	
+	multiply(45.646857, -73.842443);
+} else if (i == 13) {	// Villeray
+	multiply(45.545496, -73.624133);
+} else if (i == 14) {	// Vieux-Montréal	
+	multiply(45.506607, -73.553869);
+} else if (i == 15) {	// Ville Mont-Royal
+	multiply(45.507733, -73.587321);
+} else if (i == 16) {	// Westmount
+	multiply(45.484661, -73.599512);
+} else if (i == 17) {	// LaSalle
+	multiply(45.432627, -73.625437);
+} else if (i == 18) {	// Verdun
+	multiply(45.456074, -73.570061);
+} else if (i == 19) {	// Châteauguay
+	multiply(45.364677, -73.750806);
+} else if (i == 20) {	// Brossard
+	multiply(45.451623, -73.453279);
+} else if (i == 21) {	// Longueuil
+	multiply(45.541667, -73.511394);
+} else if (i == 22) {	// Saint-Bruno
+	multiply(45.528894, -73.342317);
+} else if (i == 23) {	// Boucherville
+	multiply(45.596916, -73.436909);
+} else if (i == 24) {	// Saint-Hilaire
+	multiply(45.555893, -73.189910);
+} else if (i == 25) {	// Saint-Hyacinthe
+	multiply(45.634907, -72.956094);
+} else if (i == 26) {	// Saint-Jean-sur-Richelieu
+	multiply(45.334846, -73.283504);
+} else if (i == 27) {	// Drummondville
+	multiply(45.856559, -72.472556);
+} else if (i == 28) {	// Sherbrooke
+	multiply(45.408279, -71.892432);
+} else if (i == 29) { 	// Magog
+	multiply(45.271260, -72.147281);
+} else if (i == 30) {	// Granby
+	multiply(45.405720, -72.734058);
+}		
 			}
 
 			map.fitBounds(bounds);

@@ -5996,11 +5996,6 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .ec-likely__widget {
 .ec-size .ec-store .ec-likely__button {
   display: none !important; }
 
-.ecwid-productBrowser-AddressBookPage .ecwid-productBrowser-head,
-.ecwid-productBrowser-AccountSettingsPage .ecwid-productBrowser-head,
-.ecwid-productBrowser-OrdersPage .ecwid-productBrowser-head {
-  visibility: hidden; }
-
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
