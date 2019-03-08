@@ -799,7 +799,8 @@ if($('.c-delivery').length) {
             	if( i == 0 ) {
 					infowindow.setContent('<div class="c-retailer_info"><h5>' + "Point de collecte" + '</h5><p>' + "Magasin Les Fermes Valens, Huntingdon<br>Lundi au vendredi, 9 h à 17 h" +  "</p></div>");
 				}
-				infowindow.setPosition(locations[i][1],locations[i][2]);
+				      					        map.setCenter(new google.maps.LatLng(locations[i][1],locations[i][2]));
+
 				infowindow.open(map, marker);
 				map.setZoom(12);
             }
