@@ -1809,7 +1809,7 @@ if($('.c-delivery').length) {
       					infowindow.open(map);
       					        map.setCenter(new google.maps.LatLng(prout,prout2));
     				}
-  				})('<h5>' + editedPolygons[i][1].title + "</h5>" + '<p>Journée de livraison' + editedPolygons[i][1].deliveryDay + "</p>"));
+  				})('<h5>' + editedPolygons[i][1].title + "</h5>" + '<p>Journée de livraison : ' + editedPolygons[i][1].deliveryDay + "</p>"));
 			}
 
 			for (var i = 0; i < editedPolygons.length; i++) {
@@ -1941,7 +1941,7 @@ if($('.c-contact-us').length) {
         var marker, i;
         for (i = 0; i < locations.length; i++) {  
             var image = {
-                scaledSize: new google.maps.Size(51, 78),
+                scaledSize: new google.maps.Size(32, 49),
                 url: "https://staging-valens.agencezel.dev/assets/images/icons/fermes-valens_shop.svg"
             };
             marker = new google.maps.Marker({
