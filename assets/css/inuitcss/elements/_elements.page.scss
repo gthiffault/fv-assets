@@ -40,6 +40,9 @@ main {
 	a {
 		text-decoration: none;	
 		color: #46823C;
+		&:hover {
+			text-decoration:underline;
+		}
 	}
 }
 
