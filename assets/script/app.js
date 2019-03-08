@@ -772,7 +772,9 @@ if($('.c-delivery').length) {
 				colorTwo 	= "#2a2a2a",
 				colorThree 	= "#83b740",
 				colorFour 	= "#26521E"	
-
+            		infowindow = new google.maps.InfoWindow({
+                		content: ''
+            		})
         var locations = [['Fernes Valens', 45.089616, -74.177272],['Fernes Valens', 45.404675, -73.946016]];
 
         for (i = 0; i < locations.length; i++) {  
@@ -790,7 +792,7 @@ if($('.c-delivery').length) {
             });
             google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-			                        	infowindow.setContent('<div class="c-retailer_info"><h5>' + "Marché de Saint-Anne-de-Bellevue" + '</h5><p>' + road + "</p></div>");
+			                        	infowindow.setContent('<div class="c-retailer_info"><h5>' + "Marché de Saint-Anne-de-Bellevue" + '</h5><p>' + "</p></div>");
 			                        	infowindow.open(map, marker);
 			                        	map.setZoom(12);
 
