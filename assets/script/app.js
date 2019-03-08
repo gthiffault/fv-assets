@@ -790,14 +790,14 @@ if($('.c-delivery').length) {
                 animation: CurrentAnimation
 
             });
+
             google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-			                        	infowindow.setContent('<div class="c-retailer_info"><h5>' + "Marché de Saint-Anne-de-Bellevue" + '</h5><p>' + "</p></div>");
-			                        	infowindow.open(map, marker);
-			                        	map.setZoom(12);
-
-
-
+            	if( i == 0 ) {
+					infowindow.setContent('<div class="c-retailer_info"><h5>' + "Point de collecte" + '</h5><p>' + "Marché de Saint-Anne-de-Bellevue<br>Samedi, de 9 h à 10 h" +  "</p></div>");
+				}
+				infowindow.open(map, marker);
+				map.setZoom(12);
             }
             })(marker, i));
         }
