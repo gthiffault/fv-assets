@@ -2019,7 +2019,7 @@ if($('.c-contact-us').length) {
 			                    	return function () {
 			                        	infowindow.setContent('<div class="c-retailer_info"><h5>' + content + '</h5><p>' + road + "</p></div>");
 			                        	infowindow.open(map, marker1);
-			                        	map.setZoom(16);
+			                        	map.setZoom(12);
 			                    	}
 			                	})(marker1, content));
 
