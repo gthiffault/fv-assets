@@ -108,12 +108,19 @@
 	 .c-file-upload {
                 font-style: italic;
                 margin-bottom: 16px;
+                .parsley-errors-list {
+                	margin-bottom: 12px !important;
+                .parsley-required {
+    margin-top: 4px !important;
+    margin-left: 0 !important;
+}
+}
             }
             .c-file-upload .c-file-select {
                 display: block;
                 cursor: pointer;
                 text-align: left;
-                overflow: hidden;
+                overflow-y: hidden;
                 position: relative;
             }
             .c-file-upload .c-file-select .c-file-select-button {
@@ -165,6 +172,7 @@
             	li {
             		font-size: 14px;
             		margin-top: -12px;
+            		margin-left: 12px;
             		color: #dc3545!important;
             		* {
 
