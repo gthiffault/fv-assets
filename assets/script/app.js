@@ -790,9 +790,9 @@ if($('.c-delivery').length) {
             });
             google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-infowindow.setContent("345");
-infowindow.open(map);
-
+			                        	infowindow.setContent('<div class="c-retailer_info"><h5>' + "Marché de Saint-Anne-de-Bellevue" + '</h5><p>' + road + "</p></div>");
+			                        	infowindow.open(map, marker);
+			                        	map.setZoom(12);
 
 
 
