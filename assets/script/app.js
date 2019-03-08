@@ -1919,6 +1919,7 @@ if($('.c-contact-us').length) {
         for (i = 0; i < locations.length; i++) {  
             var image = {
                 scaledSize: new google.maps.Size(51, 78),
+                url: "https://staging-valens.agencezel.dev/assets/images/icons/fermes-valens_shop.svg"
             };
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(locations[i][1], locations[i][2]),
