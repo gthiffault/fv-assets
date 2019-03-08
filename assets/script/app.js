@@ -2003,11 +2003,17 @@ if($('.c-contact-us').length) {
 
 				}
 
-			    $(window).on('ready resize',function() {
+			    $(document).ready(function() {
 			    	if($('#google-map').length) {
 			        	mapAction();
 			    	}
 			    }); 
+
+			    $(window).resize(function() {
+			    	if($('#google-map').length) {
+			        	mapAction();
+			    	}
+			    }); 			    
     
 
 
