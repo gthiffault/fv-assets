@@ -2003,7 +2003,7 @@ if($('.c-contact-us').length) {
 
 				}
 
-			    $(document).ready(function() {
+			    $(window).on('ready resize',function() {
 			    	if($('#google-map').length) {
 			        	mapAction();
 			    	}
