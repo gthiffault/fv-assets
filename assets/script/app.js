@@ -2366,7 +2366,8 @@ headroom.init({
 }); 
 
 		$(".c-menu-001").headroom({
-			tolerance:40
+			tolerance:40,
+			offset:250
 		});
 
 
