@@ -2008,15 +2008,6 @@ if($('.c-contact-us').length) {
 			        	mapAction();
 			    	}
 			    }); 
-
-			    $(document).resize(function() {
-			    	if($('#google-map').length) {
-			        	mapAction();
-			    	}
-			    }); 			    
-    
-
-
 			});
 
 		}
