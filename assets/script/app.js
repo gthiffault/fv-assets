@@ -793,8 +793,11 @@ if($('.c-delivery').length) {
 
             google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-            	if( i == 0 ) {
+            	if( i == 1 ) {
 					infowindow.setContent('<div class="c-retailer_info"><h5>' + "Point de collecte" + '</h5><p>' + "Marché de Saint-Anne-de-Bellevue<br>Samedi, de 9 h à 10 h" +  "</p></div>");
+				}            	
+            	if( i == 1 ) {
+					infowindow.setContent('<div class="c-retailer_info"><h5>' + "Point de collecte" + '</h5><p>' + "Magasin Les Fermes Valens, Huntingdon<br>Lundi au vendredi, 9 h à 17 h" +  "</p></div>");
 				}
 				infowindow.open(map, marker);
 				map.setZoom(12);
