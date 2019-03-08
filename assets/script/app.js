@@ -796,10 +796,10 @@ if($('.c-delivery').length) {
             	if( i == 1 ) {
 					infowindow.setContent('<div class="c-retailer_info"><h5>' + "Point de collecte" + '</h5><p>' + "Marché de Saint-Anne-de-Bellevue<br>Samedi, de 9 h à 10 h" +  "</p></div>");
 				}            	
-            	if( i == 1 ) {
+            	if( i == 0 ) {
 					infowindow.setContent('<div class="c-retailer_info"><h5>' + "Point de collecte" + '</h5><p>' + "Magasin Les Fermes Valens, Huntingdon<br>Lundi au vendredi, 9 h à 17 h" +  "</p></div>");
 				}
-				infowindow.setPosition(new google.maps.LatLng(locations[i][1],locations[i][2]));
+				infowindow.setPosition(locations[i][1],locations[i][2]);
 				infowindow.open(map, marker);
 				map.setZoom(12);
             }
