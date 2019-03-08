@@ -572,6 +572,10 @@ html {
   font-family: poppins, sans-serif;
   color: #2A2A2A; }
 
+main a {
+  text-decoration: none;
+  color: #46823C; }
+
 html#ecwid_html body#barba\-wrapper div.ecwid-productBrowser {
   padding: 0 !important; }
 
