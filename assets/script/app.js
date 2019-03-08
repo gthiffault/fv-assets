@@ -1986,6 +1986,29 @@ if($('.c-contact-us').length) {
             		var marker001 = [],
             		infoWindowContent = [];
 
+        var locations = [['Fernes Valens', 45.089616, -74.177272]];
+var marker, i;
+        for (i = 0; i < locations.length; i++) {  
+            var image = {
+                scaledSize: new google.maps.Size(51, 78),
+                url: "https://staging-valens.agencezel.dev/assets/images/icons/fermes-valens_shop.svg"
+            };
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                map: map
+                ,icon: image,
+                optimized: false,
+                animation: CurrentAnimation
+
+            });
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infowindow.setContent(locations[i][0]);
+            }
+            })(marker, i));
+        }
+            		
+
 			        /* ==================================================================
 			           #ADDMARKER
 			        ================================================================== */
