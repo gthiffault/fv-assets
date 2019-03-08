@@ -773,7 +773,7 @@ if($('.c-delivery').length) {
 				colorThree 	= "#83b740",
 				colorFour 	= "#26521E"	
 
-        var locations = [['Fernes Valens', 45.089616, -74.177272]];
+        var locations = [['Fernes Valens', 45.089616, -74.177272],['Fernes Valens', 45.404675, -73.946016]];
 
         for (i = 0; i < locations.length; i++) {  
             var image = {
