@@ -1623,8 +1623,7 @@ table {
 
 /* Style variants
    ========================================================================== */
-.c-btn--primary,
-.ecwid-btn--primary {
+.c-btn--primary {
   background-color: transparent !important;
   font-size: 14px !important;
   line-height: 28px !important;
@@ -1633,18 +1632,12 @@ table {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   padding: 0 0 24px 0 !important; }
-  .c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus,
-  .ecwid-btn--primary,
-  .ecwid-btn--primary:hover,
-  .ecwid-btn--primary:active,
-  .ecwid-btn--primary:focus {
+  .c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
     text-decoration: none !important;
     /* [4] */
     color: #2A2A2A !important;
     border: none !important; }
-  .c-btn--primary:hover, .c-btn--primary:focus,
-  .ecwid-btn--primary:hover,
-  .ecwid-btn--primary:focus {
+  .c-btn--primary:hover, .c-btn--primary:focus {
     background-color: transparent !important;
     color: #C1CC29 !important; }
 
@@ -1771,7 +1764,8 @@ table {
 .c-btn--tertiary,
 .ecwid-btn--secondary,
 .details-product-purchase__controls .form-control__button,
-html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button {
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button,
+.ecwid-btn--primary {
   background-color: transparent;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
@@ -1799,7 +1793,8 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   .c-btn--tertiary:before,
   .ecwid-btn--secondary:before,
   .details-product-purchase__controls .form-control__button:before,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:before {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:before,
+  .ecwid-btn--primary:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -1826,14 +1821,16 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   .c-btn--tertiary:hover:before,
   .ecwid-btn--secondary:hover:before,
   .details-product-purchase__controls .form-control__button:hover:before,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:hover:before {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:hover:before,
+  .ecwid-btn--primary:hover:before {
     -webkit-transform: scaleY(1);
     -ms-transform: scaleY(1);
         transform: scaleY(1); }
   .c-btn--tertiary:after,
   .ecwid-btn--secondary:after,
   .details-product-purchase__controls .form-control__button:after,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:after {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:after,
+  .ecwid-btn--primary:after {
     position: absolute;
     content: "";
     right: 16px;
@@ -1869,7 +1866,15 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--orders,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--clearBag,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--continueShopping,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--apply {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--apply,
+  .ecwid-btn--primary.ecwid-btn--register_popup_button,
+  .ecwid-btn--primary.ecwid-btn--change,
+  .ecwid-btn--primary.ecwid-btn--delete,
+  .ecwid-btn--primary.ecwid-btn--cancel,
+  .ecwid-btn--primary.ecwid-btn--orders,
+  .ecwid-btn--primary.ecwid-btn--clearBag,
+  .ecwid-btn--primary.ecwid-btn--continueShopping,
+  .ecwid-btn--primary.ecwid-btn--apply {
     border: 1px solid #2A2A2A !important;
     color: #2A2A2A !important;
     background: #FFF !important;
@@ -1885,7 +1890,10 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   .details-product-purchase__controls .form-control__button.ecwid-btn--secondary-inverse,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.-two,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--save,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--secondary-inverse {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--secondary-inverse,
+  .ecwid-btn--primary.-two,
+  .ecwid-btn--primary.ecwid-btn--save,
+  .ecwid-btn--primary.ecwid-btn--secondary-inverse {
     border: 1px solid #2A2A2A !important;
     color: #FFF !important;
     background: #82B640 !important;
@@ -1899,7 +1907,10 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
     .details-product-purchase__controls .form-control__button.ecwid-btn--secondary-inverse:after,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.-two:after,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--save:after,
-    html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--secondary-inverse:after {
+    html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--secondary-inverse:after,
+    .ecwid-btn--primary.-two:after,
+    .ecwid-btn--primary.ecwid-btn--save:after,
+    .ecwid-btn--primary.ecwid-btn--secondary-inverse:after {
       background-position: -257px -12px; }
     .c-btn--tertiary.-two.ecwid-btn--save, .c-btn--tertiary.ecwid-btn--save.ecwid-btn--save, .c-btn--tertiary.ecwid-btn--secondary-inverse.ecwid-btn--save,
     .ecwid-btn--secondary.-two.ecwid-btn--save,
@@ -1910,7 +1921,10 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
     .details-product-purchase__controls .form-control__button.ecwid-btn--secondary-inverse.ecwid-btn--save,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.-two.ecwid-btn--save,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--save.ecwid-btn--save,
-    html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--secondary-inverse.ecwid-btn--save {
+    html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--secondary-inverse.ecwid-btn--save,
+    .ecwid-btn--primary.-two.ecwid-btn--save,
+    .ecwid-btn--primary.ecwid-btn--save.ecwid-btn--save,
+    .ecwid-btn--primary.ecwid-btn--secondary-inverse.ecwid-btn--save {
       margin-bottom: 40px !important;
       display: inline-block !important; }
     .c-btn--tertiary.-two span, .c-btn--tertiary.ecwid-btn--save span, .c-btn--tertiary.ecwid-btn--secondary-inverse span,
@@ -1922,14 +1936,18 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
     .details-product-purchase__controls .form-control__button.ecwid-btn--secondary-inverse span,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.-two span,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--save span,
-    html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--secondary-inverse span {
+    html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--secondary-inverse span,
+    .ecwid-btn--primary.-two span,
+    .ecwid-btn--primary.ecwid-btn--save span,
+    .ecwid-btn--primary.ecwid-btn--secondary-inverse span {
       color: #FFF !important; }
   .c-btn--tertiary.ecwid-btn--clearBag,
   .ecwid-btn--secondary.ecwid-btn--clearBag,
   .details-product-purchase__controls .form-control__button.ecwid-btn--clearBag,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--clearBag {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--clearBag,
+  .ecwid-btn--primary.ecwid-btn--clearBag {
     background: transparent !important; }
-  .c-btn--tertiary.ecwid-btn--save, .c-btn--tertiary.ecwid-btn--change, .c-btn--tertiary.ecwid-btn--delete, .c-btn--tertiary.ecwid-btn--secondary-inverse, .c-btn--tertiary.ecwid-btn--register_popup_button, .c-btn--tertiary.ecwid-btn--cancel, .c-btn--tertiary.ecwid-btn--orders, .c-btn--tertiary.ecwid-btn--clearBag, .c-btn--tertiary.ecwid-btn--continueShopping, .c-btn--tertiary.ecwid-btn--apply, .c-btn--tertiary.ecwid-btn--changeOptions, .c-btn--tertiary.ecwid-btn--changeAddress, .c-btn--tertiary.form-control__button,
+  .c-btn--tertiary.ecwid-btn--save, .c-btn--tertiary.ecwid-btn--change, .c-btn--tertiary.ecwid-btn--delete, .c-btn--tertiary.ecwid-btn--secondary-inverse, .c-btn--tertiary.ecwid-btn--register_popup_button, .c-btn--tertiary.ecwid-btn--cancel, .c-btn--tertiary.ecwid-btn--orders, .c-btn--tertiary.ecwid-btn--clearBag, .c-btn--tertiary.ecwid-btn--continueShopping, .c-btn--tertiary.ecwid-btn--apply, .c-btn--tertiary.ecwid-btn--changeOptions, .c-btn--tertiary.ecwid-btn--changeAddress, .c-btn--tertiary.form-control__button, .c-btn--tertiary.ecwid-btn--primary,
   .ecwid-btn--secondary.ecwid-btn--save,
   .ecwid-btn--secondary.ecwid-btn--change,
   .ecwid-btn--secondary.ecwid-btn--delete,
@@ -1943,6 +1961,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   .ecwid-btn--secondary.ecwid-btn--changeOptions,
   .ecwid-btn--secondary.ecwid-btn--changeAddress,
   .ecwid-btn--secondary.form-control__button,
+  .ecwid-btn--secondary.ecwid-btn--primary,
   .details-product-purchase__controls .form-control__button.ecwid-btn--save,
   .details-product-purchase__controls .form-control__button.ecwid-btn--change,
   .details-product-purchase__controls .form-control__button.ecwid-btn--delete,
@@ -1956,6 +1975,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   .details-product-purchase__controls .form-control__button.ecwid-btn--changeOptions,
   .details-product-purchase__controls .form-control__button.ecwid-btn--changeAddress,
   .details-product-purchase__controls .form-control__button.form-control__button,
+  .details-product-purchase__controls .form-control__button.ecwid-btn--primary,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--save,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--change,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--delete,
@@ -1968,9 +1988,24 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--apply,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--changeOptions,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--changeAddress,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.form-control__button {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.form-control__button,
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--primary,
+  .ecwid-btn--primary.ecwid-btn--save,
+  .ecwid-btn--primary.ecwid-btn--change,
+  .ecwid-btn--primary.ecwid-btn--delete,
+  .ecwid-btn--primary.ecwid-btn--secondary-inverse,
+  .ecwid-btn--primary.ecwid-btn--register_popup_button,
+  .ecwid-btn--primary.ecwid-btn--cancel,
+  .ecwid-btn--primary.ecwid-btn--orders,
+  .ecwid-btn--primary.ecwid-btn--clearBag,
+  .ecwid-btn--primary.ecwid-btn--continueShopping,
+  .ecwid-btn--primary.ecwid-btn--apply,
+  .ecwid-btn--primary.ecwid-btn--changeOptions,
+  .ecwid-btn--primary.ecwid-btn--changeAddress,
+  .ecwid-btn--primary.form-control__button,
+  .ecwid-btn--primary.ecwid-btn--primary {
     padding-right: 20px !important; }
-    .c-btn--tertiary.ecwid-btn--save:after, .c-btn--tertiary.ecwid-btn--change:after, .c-btn--tertiary.ecwid-btn--delete:after, .c-btn--tertiary.ecwid-btn--secondary-inverse:after, .c-btn--tertiary.ecwid-btn--register_popup_button:after, .c-btn--tertiary.ecwid-btn--cancel:after, .c-btn--tertiary.ecwid-btn--orders:after, .c-btn--tertiary.ecwid-btn--clearBag:after, .c-btn--tertiary.ecwid-btn--continueShopping:after, .c-btn--tertiary.ecwid-btn--apply:after, .c-btn--tertiary.ecwid-btn--changeOptions:after, .c-btn--tertiary.ecwid-btn--changeAddress:after, .c-btn--tertiary.form-control__button:after,
+    .c-btn--tertiary.ecwid-btn--save:after, .c-btn--tertiary.ecwid-btn--change:after, .c-btn--tertiary.ecwid-btn--delete:after, .c-btn--tertiary.ecwid-btn--secondary-inverse:after, .c-btn--tertiary.ecwid-btn--register_popup_button:after, .c-btn--tertiary.ecwid-btn--cancel:after, .c-btn--tertiary.ecwid-btn--orders:after, .c-btn--tertiary.ecwid-btn--clearBag:after, .c-btn--tertiary.ecwid-btn--continueShopping:after, .c-btn--tertiary.ecwid-btn--apply:after, .c-btn--tertiary.ecwid-btn--changeOptions:after, .c-btn--tertiary.ecwid-btn--changeAddress:after, .c-btn--tertiary.form-control__button:after, .c-btn--tertiary.ecwid-btn--primary:after,
     .ecwid-btn--secondary.ecwid-btn--save:after,
     .ecwid-btn--secondary.ecwid-btn--change:after,
     .ecwid-btn--secondary.ecwid-btn--delete:after,
@@ -1984,6 +2019,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
     .ecwid-btn--secondary.ecwid-btn--changeOptions:after,
     .ecwid-btn--secondary.ecwid-btn--changeAddress:after,
     .ecwid-btn--secondary.form-control__button:after,
+    .ecwid-btn--secondary.ecwid-btn--primary:after,
     .details-product-purchase__controls .form-control__button.ecwid-btn--save:after,
     .details-product-purchase__controls .form-control__button.ecwid-btn--change:after,
     .details-product-purchase__controls .form-control__button.ecwid-btn--delete:after,
@@ -1997,6 +2033,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
     .details-product-purchase__controls .form-control__button.ecwid-btn--changeOptions:after,
     .details-product-purchase__controls .form-control__button.ecwid-btn--changeAddress:after,
     .details-product-purchase__controls .form-control__button.form-control__button:after,
+    .details-product-purchase__controls .form-control__button.ecwid-btn--primary:after,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--save:after,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--change:after,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--delete:after,
@@ -2009,18 +2046,35 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--apply:after,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--changeOptions:after,
     html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--changeAddress:after,
-    html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.form-control__button:after {
+    html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.form-control__button:after,
+    html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--primary:after,
+    .ecwid-btn--primary.ecwid-btn--save:after,
+    .ecwid-btn--primary.ecwid-btn--change:after,
+    .ecwid-btn--primary.ecwid-btn--delete:after,
+    .ecwid-btn--primary.ecwid-btn--secondary-inverse:after,
+    .ecwid-btn--primary.ecwid-btn--register_popup_button:after,
+    .ecwid-btn--primary.ecwid-btn--cancel:after,
+    .ecwid-btn--primary.ecwid-btn--orders:after,
+    .ecwid-btn--primary.ecwid-btn--clearBag:after,
+    .ecwid-btn--primary.ecwid-btn--continueShopping:after,
+    .ecwid-btn--primary.ecwid-btn--apply:after,
+    .ecwid-btn--primary.ecwid-btn--changeOptions:after,
+    .ecwid-btn--primary.ecwid-btn--changeAddress:after,
+    .ecwid-btn--primary.form-control__button:after,
+    .ecwid-btn--primary.ecwid-btn--primary:after {
       display: none; }
   .c-btn--tertiary.ecwid-btn--orders,
   .ecwid-btn--secondary.ecwid-btn--orders,
   .details-product-purchase__controls .form-control__button.ecwid-btn--orders,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--orders {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--orders,
+  .ecwid-btn--primary.ecwid-btn--orders {
     margin-left: 41px !important;
     height: 55px !important; }
   .c-btn--tertiary.ecwid-btn--change,
   .ecwid-btn--secondary.ecwid-btn--change,
   .details-product-purchase__controls .form-control__button.ecwid-btn--change,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--change {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--change,
+  .ecwid-btn--primary.ecwid-btn--change {
     margin-right: 20px !important; }
   .c-btn--tertiary.ecwid-btn--changeOptions, .c-btn--tertiary.ecwid-btn--changeAddress,
   .ecwid-btn--secondary.ecwid-btn--changeOptions,
@@ -2028,7 +2082,9 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   .details-product-purchase__controls .form-control__button.ecwid-btn--changeOptions,
   .details-product-purchase__controls .form-control__button.ecwid-btn--changeAddress,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--changeOptions,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--changeAddress {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.ecwid-btn--changeAddress,
+  .ecwid-btn--primary.ecwid-btn--changeOptions,
+  .ecwid-btn--primary.ecwid-btn--changeAddress {
     border: none !important;
     color: #2A2A2A !important;
     background: transparent !important;
@@ -2049,7 +2105,11 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:hover,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:active,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:focus {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:focus,
+  .ecwid-btn--primary,
+  .ecwid-btn--primary:hover,
+  .ecwid-btn--primary:active,
+  .ecwid-btn--primary:focus {
     text-decoration: none;
     color: #4a8ec2; }
   .c-btn--tertiary:hover, .c-btn--tertiary:focus,
@@ -2058,7 +2118,9 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   .details-product-purchase__controls .form-control__button:hover,
   .details-product-purchase__controls .form-control__button:focus,
   html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:hover,
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:focus {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:focus,
+  .ecwid-btn--primary:hover,
+  .ecwid-btn--primary:focus {
     color: #3774a2; }
 
 .ecwid-btn--primary.ecwid-btn--checkout {
@@ -2073,12 +2135,24 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
   min-width: 128px !important;
   margin-right: 20px !important; }
 
-html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button {
-  border: 1px solid #2A2A2A;
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button,
+.ecwid-btn--primary {
+  border: 1px solid #2A2A2A !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
   padding: 12px 20px !important;
   background: transparent !important; }
-  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:before {
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button span,
+  .ecwid-btn--primary span {
+    font-weight: 700 !important; }
+  html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button:before,
+  .ecwid-btn--primary:before {
     display: none; }
+
+.ecwid-btn--primary {
+  margin-right: 24px !important;
+  margin-bottom: 24px !important;
+  margin-top: 12px !important; }
 
 .c-btn--fourth {
   background-color: transparent !important;
@@ -5206,6 +5280,9 @@ table.ecwid-productBrowser-auth-mini.ecwid-productBrowser-auth-mini-horizontal t
   text-align: right;
   padding-bottom: 24px; }
 
+.homePage .c-add {
+  margin-top: 36px !important; }
+
 .c-add div {
   position: relative !important;
   margin-top: -90px !important; }
@@ -5243,6 +5320,9 @@ html#ecwid_html body#barba\-wrapper.homePage .ecwid img, html#ecwid_html body#ba
   bottom: 0 !important;
   width: 100%;
   margin-bottom: 0 !important; }
+  .ecwid-SingleProduct-picture img {
+    min-height: 100%;
+    min-width: 100%; }
 
 .ecwid-SingleProduct-picture:before {
   display: none !important; }
@@ -5256,7 +5336,7 @@ html#ecwid_html body#barba\-wrapper.homePage .ecwid img, html#ecwid_html body#ba
 
 html#ecwid_html body#barba\-wrapper .ecwid div.ecwid-productBrowser-price.ecwid-price div div {
   color: #2A2A2A !important;
-  font-size: 14px !important;
+  font-size: 14px;
   padding-bottom: 32px !important;
   text-align: left !important;
   padding: 0 24px !important; }
@@ -5288,14 +5368,22 @@ html#ecwid_html body#barba\-wrapper .ecwid.ecwid-SingleProduct-v2.ecwid-SinglePr
   margin: 0 !important;
   border-bottom: 1px solid #F4F6F8 !important; }
 
-.homePage .ecwid-title {
-  margin-top: 0 !important; }
-
 .c-home-special {
   position: relative !important; }
 
 .ecwid-SingleProduct-v2 {
   background: #FFF !important; }
+
+.ecwid-title {
+  padding-top: 24px; }
+  .ecwid-title p {
+    font-family: poppins, sans-serif !important;
+    font-size: 16px !important;
+    padding-bottom: 12px !important; }
+
+.ecwid-productBrowser-price.ecwid-price {
+  font-weight: 600 !important;
+  font-size: 16px !important; }
 
 .c-txt-img_wrap {
   background: #FCF7F1;

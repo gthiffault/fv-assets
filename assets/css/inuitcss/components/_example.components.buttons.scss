@@ -36,8 +36,7 @@
 /* Style variants
    ========================================================================== */
 
-.c-btn--primary,
-.ecwid-btn--primary {
+.c-btn--primary {
   background-color: transparent !important;
   font-size: 14px !important;
   line-height: 28px !important;
@@ -227,7 +226,8 @@
 .c-btn--tertiary,
 .ecwid-btn--secondary,
 .details-product-purchase__controls .form-control__button,
-html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button {
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button,
+.ecwid-btn--primary {
       background-color: transparent;
       border: 1px solid $colorThree;
       color: $colorThree;
@@ -343,7 +343,8 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
       &.ecwid-btn--apply,
       &.ecwid-btn--changeOptions,
       &.ecwid-btn--changeAddress,
-      &.form-control__button {
+      &.form-control__button,
+      &.ecwid-btn--primary {
         padding-right: 20px !important;
 
         &:after {
@@ -400,14 +401,26 @@ min-width: 128px !important;
 margin-right: 20px !important;
 }
 
-html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button{
-  border: 1px solid $colorTwo;
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button,
+.ecwid-btn--primary {
+  border: 1px solid $colorTwo !important;
+  box-shadow: none !important;
   padding: 12px 20px !important;
   background: transparent !important;
+  span {font-weight: 700 !important;}
 &:before {
   display: none;
 }
 }
+
+
+.ecwid-btn--primary {
+  margin-right: 24px !important;
+  margin-bottom: 24px !important;
+  margin-top: 12px !important;
+}
+
+
 .c-btn--fourth  {
     background-color: transparent !important;
     border: 1px solid #2a2a2a;

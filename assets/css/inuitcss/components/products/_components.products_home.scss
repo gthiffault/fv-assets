@@ -53,6 +53,12 @@ table.ecwid-productBrowser-auth-mini.ecwid-productBrowser-auth-mini-horizontal t
 	padding-bottom: 24px;
 }
 
+.homePage {
+	.c-add {
+		margin-top: 36px !important;
+	}
+}
+
 .c-add div {
 	position: relative !important;
 	margin-top: -90px !important;
@@ -100,6 +106,10 @@ html#ecwid_html body#barba\-wrapper.homePage .ecwid img, html#ecwid_html body#ba
     bottom: 0 !important;
 	width: 100%;
     margin-bottom: 0 !important;	
+    img {
+min-height: 100%;
+    min-width: 100%;    	
+    }
 }
 
 .ecwid-SingleProduct-picture:before {
@@ -120,7 +130,7 @@ background: #F4F6F8;
 
 html#ecwid_html body#barba\-wrapper .ecwid div.ecwid-productBrowser-price.ecwid-price div div{
 	color: $colorTwo !important;
-	font-size: 14px !important;
+	font-size: 14px;
 	padding-bottom: 32px !important;
 	text-align: left !important;
 	padding: 0 24px !important;
@@ -161,15 +171,24 @@ html#ecwid_html body#barba\-wrapper .ecwid.ecwid-SingleProduct-v2.ecwid-SinglePr
 	border-bottom: 1px solid #F4F6F8 !important;
 }
 
-.homePage .ecwid-title {
-	margin-top: 0 !important;
-}
-
-
 .c-home-special {
 	position: relative !important;
 }
 
 .ecwid-SingleProduct-v2 {
 	background: #FFF !important;
+}
+
+.ecwid-title {
+	padding-top: 24px;
+	p {
+    font-family: poppins, sans-serif !important;
+    font-size: 16px !important;
+    padding-bottom: 12px !important;		
+	}
+}
+
+.ecwid-productBrowser-price.ecwid-price {
+	font-weight: 600 !important;
+	font-size: 16px !important;
 }

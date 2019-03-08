@@ -584,7 +584,16 @@ if(page.type == "ACCOUNT_SETTINGS" || page.type == "ORDERS" || page.type == "ADD
 
         $(this).find('.grid-product__title-inner').height(highestBox);
     }); 
+      $('.grid__products').each(function(){  
+        var highestBox = 0;
+        $(this).find('.grid-product__title-inner').each(function(){
+            if($(this).height() > highestBox){  
+                highestBox = $(this).height();  
+            }
+        })
 
+        $(this).find('.grid-product__title-inner').height(highestBox);
+    }); 
 
 },100);
 
@@ -2174,7 +2183,20 @@ $(window).on('resize scroll load ready', function() {
         })
 
         $(this).find('.grid-product__title-inner').height(highestBox);
-    }); 
+    });
+
+
+      $('.c-special_wrap').each(function(){  
+        var highestBoxTwo = 0;
+
+        $(this).find('.ecwid-title').each(function(){
+            if($(this).height() > highestBoxTwo){  
+                highestBoxTwo = $(this).height();  
+            }
+        })
+
+        $(this).find('.ecwid-title').height(highestBoxTwo);
+    });     
       
 });      
 
