@@ -5646,6 +5646,12 @@ label {
 .c-contact_block {
   margin-bottom: 56px; }
 
+.c-delivery #google-map {
+  height: 620px; }
+
+.c-contact-us #google-map {
+  height: 294px; }
+
 .c-job-information_div {
   margin-bottom: 72px; }
   .c-job-information_div:last-child {

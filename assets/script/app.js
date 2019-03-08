@@ -1786,7 +1786,7 @@ if($('.c-delivery').length) {
       					infowindow.open(map);
       					        map.setCenter(new google.maps.LatLng(prout,prout2));
     				}
-  				})('<h5>' + editedPolygons[i][1].title + "</h5>" + '<p>' + editedPolygons[i][1].deliveryDay + "</p>"));
+  				})('<h5>' + editedPolygons[i][1].title + "</h5>" + '<p>Journée de livraison' + editedPolygons[i][1].deliveryDay + "</p>"));
 			}
 
 			for (var i = 0; i < editedPolygons.length; i++) {
@@ -2019,6 +2019,7 @@ if($('.c-contact-us').length) {
 			                    	return function () {
 			                        	infowindow.setContent('<div class="c-retailer_info"><h5>' + content + '</h5><p>' + road + "</p></div>");
 			                        	infowindow.open(map, marker1);
+			                        	 map.setZoom(11);
 			                        	map.panTo(this.getPosition());
 			                    	}
 			                	})(marker1, content));
