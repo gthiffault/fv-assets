@@ -180,7 +180,7 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
 	.c-account-management_submenu {
 		display: none;
 		position: absolute;
-		width: 336px;
+		width: 198px;
 		right: -2px;
 	    padding: 14px 32px;
 	    background: #FFF;
@@ -191,16 +191,6 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
 	    li {
 	    	display: block;
 	    }
-		&:before {
-		    position: absolute;
-		    content: '';
-		    background: url(../images/icons/valens-green-arrow.svg);
-		    width: 21px;
-		    height: 11px;
-		    right: 26px;
-		    top: 10px;
-		    transform: rotate(180deg);
-		}
 		a {
 			font-size: 18px;
 			font-family: 'Montserrat', sans-serif;

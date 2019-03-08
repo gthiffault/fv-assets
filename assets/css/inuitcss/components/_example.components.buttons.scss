@@ -111,7 +111,9 @@
 
 .hamburger .hamburger-box,
 .hamburger .hamburger-label,
-.c-submit {
+.c-submit,
+.c-account-management,
+.c-cart {
 
     display: inline-block;
     vertical-align: middle;
@@ -174,6 +176,13 @@
     transform: scaleY(1);
     }
 }
+
+
+  .js-link-active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
 .js-menu-active {
 .hamburger .hamburger-box,
 .hamburger .hamburger-label
@@ -182,7 +191,12 @@
     background: #46823C;
     transition: background 0.2s 0.35s linear;
   }
-}  
+} 
+  .c-account-management:before,
+  .c-cart:before {
+    background: #46823C;
+  }
+
 }
 
 
@@ -200,7 +214,9 @@
 
 .homePage {
 .hamburger .hamburger-box,
-.hamburger .hamburger-label {
+.hamburger .hamburger-label,
+.c-account-management,
+.c-cart {
 &:before {
     background: #46823C;
 }
@@ -210,7 +226,8 @@
 
 .c-btn--tertiary,
 .ecwid-btn--secondary,
-.details-product-purchase__controls .form-control__button {
+.details-product-purchase__controls .form-control__button,
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button {
       background-color: transparent;
       border: 1px solid $colorThree;
       color: $colorThree;
@@ -326,7 +343,8 @@
       &.ecwid-btn--continueShopping,
       &.ecwid-btn--apply,
       &.ecwid-btn--changeOptions,
-      &.ecwid-btn--changeAddress {
+      &.ecwid-btn--changeAddress,
+      &.form-control__button {
         padding-right: 20px !important;
 
         &:after {
@@ -383,7 +401,14 @@ min-width: 128px !important;
 margin-right: 20px !important;
 }
 
-
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button{
+  border: 1px solid $colorTwo;
+  padding: 12px 20px !important;
+  background: transparent !important;
+&:before {
+  display: none;
+}
+}
 .c-btn--fourth  {
     background-color: transparent !important;
     border: 1px solid #2a2a2a;

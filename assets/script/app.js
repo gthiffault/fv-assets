@@ -636,7 +636,9 @@ setTimeout(function() {
     if (page.type == "CATEGORY" || page.type == "SEARCH"|| page.type == "FAVORITES") { 
     	$('.c-products').addClass('-js-c-category');
     	$('.ecwid-productBrowser-head h2').remove();
+
     	  	$('.ecwid-productBrowser-head').append('<h2>' + $('.ecwid-productBrowser-head').html() + '</h2');
+
 $('h1').text('Nos produits').html();
 $('html').addClass('js-ecwid-page');
 			$('.c-page_wrap .o-wrap-six').append('<h2 class="c-page-title">' + "Nos produits"  + '</h2');	
@@ -743,14 +745,9 @@ $('.c-our-products').css('opacity','1');
 
 });
 
-
-
-    
-
-
-
 $('.c-account-management').on('click',function() {
     $(this).find('.c-account-management_submenu').slideToggle();
+    $(this).toggleClass('js-link-active');
 })
     window.ec = window.ec || {};
     window.ec.config = window.ec.config || {};

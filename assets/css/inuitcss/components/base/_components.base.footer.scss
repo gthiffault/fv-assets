@@ -92,14 +92,19 @@
 				    background: url(../images/icons/fermes-valens_icons.svg);
 				    width: 26px;
 				    height: 26px;
-
 				    margin: 0 auto;
 				    &.c-social-media_facebook {
 				    	background-position: -39px -53px;
+					    &:hover {
+							background-position: -148px -53px;		    	
+					    }	
 				    }
 				    &.c-social-media_linkedin {
 				    	background-position: -78px -53px;
-				    }				    
+					    &:hover {
+							background-position: -178px -52px;		    	
+					    }	
+				    }			    
 				}
 				&:first-child {
 					margin-left:0;
