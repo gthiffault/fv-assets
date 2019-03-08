@@ -790,7 +790,12 @@ if($('.c-delivery').length) {
             });
             google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-                infowindow.setContent(locations[i][0]);
+infowindow.setContent("345");
+infowindow.open(map);
+
+
+
+
             }
             })(marker, i));
         }
