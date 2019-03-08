@@ -1649,9 +1649,6 @@ table {
   .ecwid span:hover, .ecwid span:focus {
     color: #C1CC29 !important; }
 
-.ecwid-btn--primary:hover * {
-  color: #C1CC29 !important; }
-
 .c-btn--secondary {
   background-color: #FFFFFF !important; }
   .c-btn--secondary, .c-btn--secondary:hover, .c-btn--secondary:active, .c-btn--secondary:focus {
@@ -2152,7 +2149,12 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
 .ecwid-btn--primary {
   margin-right: 24px !important;
   margin-bottom: 24px !important;
-  margin-top: 12px !important; }
+  margin-top: 12px !important;
+  color: #2A2A2A !important; }
+  .ecwid-btn--primary span {
+    color: #2A2A2A !important; }
+  .ecwid-btn--primary:hover {
+    color: #2A2A2A !important; }
 
 .c-btn--fourth {
   background-color: transparent !important;
@@ -5385,6 +5387,19 @@ html#ecwid_html body#barba\-wrapper .ecwid.ecwid-SingleProduct-v2.ecwid-SinglePr
   font-weight: 600 !important;
   font-size: 16px !important; }
 
+.ecwid.ecwid-SingleProduct-v2.ecwid-SingleProduct-v2-centered.ecwid-Product.loaded img {
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+
+.ecwid.ecwid-SingleProduct-v2.ecwid-SingleProduct-v2-centered.ecwid-Product.loaded:hover img {
+  -webkit-transform: scale(1.1) translateZ(0);
+          transform: scale(1.1) translateZ(0); }
+
+.ecwid-SingleProduct-picture {
+  overflow: hidden !important; }
+
 .c-txt-img_wrap {
   background: #FCF7F1;
   position: relative; }
@@ -6041,12 +6056,12 @@ div#ecwid_yotpo_rating {
 
 .yotpo.yotpo-main-widget {
   position: relative !important; }
-  .yotpo.yotpo-main-widget .main-widget.yotpo-display-wrapper.yotpo-label-border {
+  .yotpo.yotpo-main-widget .main-widget.yotpo-display-wrapper {
     background: #F1F3FA;
     padding-bottom: 72px !important;
     position: relative !important;
     padding-top: 36px; }
-    .yotpo.yotpo-main-widget .main-widget.yotpo-display-wrapper.yotpo-label-border:before {
+    .yotpo.yotpo-main-widget .main-widget.yotpo-display-wrapper:before {
       position: absolute;
       content: "";
       top: 0;
@@ -6401,6 +6416,12 @@ html#ecwid_html body#barba\-wrapper .ecwid div.form-control__select-text {
 
 .ecwid-productBrowser-SignInPage .ec-page-title {
   min-height: 64px !important; }
+
+html#ecwid_html body#barba\-wrapper .ecwid .ecwid-btn--actionOK:before {
+  background: transparent url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'%3E%3Cpath fill='748F34' d='M5 12l5.02 4.9L21.15 4c.65-.66 1.71-.66 2.36 0 .65.67.65 1.74 0 2.4l-12.3 14.1c-.33.33-.76.5-1.18.5-.43 0-.86-.17-1.18-.5l-6.21-6.1c-.65-.66-.65-1.74 0-2.41.65-.65 1.71-.65 2.36.01z'/%3E%3C/svg%3E") no-repeat scroll center center/contain !important;
+  width: 27px !important;
+  height: 23px !important;
+  margin: -13.5px -11.5px !important; }
 
 .c-content-delivery {
   padding-right: 36px;

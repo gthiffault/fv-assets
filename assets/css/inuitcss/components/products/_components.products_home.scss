@@ -192,3 +192,19 @@ html#ecwid_html body#barba\-wrapper .ecwid.ecwid-SingleProduct-v2.ecwid-SinglePr
 	font-weight: 600 !important;
 	font-size: 16px !important;
 }
+
+.ecwid.ecwid-SingleProduct-v2.ecwid-SingleProduct-v2-centered.ecwid-Product.loaded {
+	img {
+		transition: transform 0.2s linear;
+	}
+}
+
+.ecwid.ecwid-SingleProduct-v2.ecwid-SingleProduct-v2-centered.ecwid-Product.loaded:hover {
+	img {
+		transform: scale(1.1) translateZ(0);
+	}
+}
+
+.ecwid-SingleProduct-picture {
+	overflow: hidden !important;
+}
