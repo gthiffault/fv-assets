@@ -777,7 +777,7 @@ if($('.c-delivery').length) {
 
         for (i = 0; i < locations.length; i++) {  
             var image = {
-                scaledSize: new google.maps.Size(51, 78),
+                scaledSize: new google.maps.Size(32, 49),
                 url: "https://staging-valens.agencezel.dev/assets/images/icons/fermes-valens_shop.svg"
             };
             marker = new google.maps.Marker({
