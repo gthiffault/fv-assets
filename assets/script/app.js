@@ -1951,7 +1951,7 @@ if($('.c-contact-us').length) {
 			                var link = marker[9];    
 
 			                var icon = {
-			                    url: 'http://lafabriquejosito.com/assets/images/icons/marker-fabrique.svg',
+			                    url: 'https://staging-valens.agencezel.dev/assets/images/icons/fermes-valens_point-of-sale.svg',
 			                     scaledSize: new google.maps.Size(27, 42), // scaled size
 			                    origin: new google.maps.Point(0, 0),
 			                    anchor: new google.maps.Point(17, 34),
