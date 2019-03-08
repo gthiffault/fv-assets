@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="52px" viewBox="0 0 36 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>point-vente</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 -0.0002 35.509 -0.0002 35.509 51.1586 0 51.1586"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="items-visuel-web" transform="translate(-1141.000000, -922.000000)">
+            <g id="point-vente" transform="translate(1141.000000, 922.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M17.7545,27.6976 C12.2635,27.6976 7.8125,23.2456 7.8125,17.7546 C7.8125,12.2636 12.2635,7.8116 17.7545,7.8116 C23.2455,7.8116 27.6965,12.2636 27.6965,17.7546 C27.6965,23.2456 23.2455,27.6976 17.7545,27.6976 M17.7545,-0.0004 C7.9485,-0.0004 -0.0005,7.9486 -0.0005,17.7546 C-0.0005,26.9106 9.5985,34.9636 16.3625,49.8206 C17.1755,51.6046 18.3345,51.6046 19.1465,49.8206 C25.9105,34.9636 35.5095,26.9106 35.5095,17.7546 C35.5085,7.9486 27.5605,-0.0004 17.7545,-0.0004" id="Fill-1" fill="#80B540" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
