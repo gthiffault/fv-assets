@@ -451,7 +451,6 @@ Ecwid.OnPageLoaded.add(function(page) {
 	}
 
 
-$('html, body').animate({scrollTop : 0},0);
 setTimeout(function() {
    console.log("Current page is of type: " + page.type);
     if (page.type == "CATEGORY" || page.type == "SEARCH"|| page.type == "FAVORITES") { 
