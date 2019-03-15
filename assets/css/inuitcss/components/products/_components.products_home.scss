@@ -130,7 +130,7 @@ background: #F4F6F8;
 
 html#ecwid_html body#barba\-wrapper .ecwid div.ecwid-productBrowser-price.ecwid-price div div{
 	color: $colorTwo !important;
-	font-size: 14px;
+	font-size: 13px;
 	padding-bottom: 32px !important;
 	text-align: left !important;
 	padding: 0 24px !important;
@@ -138,8 +138,8 @@ html#ecwid_html body#barba\-wrapper .ecwid div.ecwid-productBrowser-price.ecwid-
 
 
 html#ecwid_html body#barba\-wrapper .ecwid div.ecwid-title {
-  font-size: 18px !important;
-  line-height: 22px !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
   letter-spacing: 0.64px !important;
   color: $colorTwo !important;
   margin-bottom: -20px !important;
@@ -183,27 +183,37 @@ html#ecwid_html body#barba\-wrapper .ecwid.ecwid-SingleProduct-v2.ecwid-SinglePr
 	padding-top: 24px;
 	p {
     font-family: poppins, sans-serif !important;
-    font-size: 16px !important;
-    padding-bottom: 12px !important;		
+    font-size: 13px !important;
+    padding-bottom: 12px !important;	
+    line-height: 20px !important;	
 	}
 }
 
 .ecwid-productBrowser-price.ecwid-price {
 	font-weight: 600 !important;
-	font-size: 16px !important;
+	font-size: 13px !important;
 }
 
 .ecwid.ecwid-SingleProduct-v2.ecwid-SingleProduct-v2-centered.ecwid-Product.loaded {
-	img {
-		transition: transform 0.2s linear;
-	}
-}
-
-.ecwid.ecwid-SingleProduct-v2.ecwid-SingleProduct-v2-centered.ecwid-Product.loaded:hover {
-	img {
-		transform: scale(1.1) translateZ(0);
-	}
-}
+    .ecwid-btn--primary {
+	    display: inline-block;
+	    vertical-align: middle;
+	    -webkit-transform: perspective(1px) translateZ(0);
+	    transform: perspective(1px) translateZ(0);
+	    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	    position: relative;
+	    -webkit-transition-property: color;
+	    transition-property: color;
+	    -webkit-transition-duration: 0.3s;
+	    transition-duration: 0.3s;
+	    cursor: pointer;
+	    text-decoration: none;
+	    color: #666;
+	    -webkit-tap-highlight-color: rgba(0,0,0,0);
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    border: 1px solid $colorTwo !important;
+	    }}
 
 .ecwid-SingleProduct-picture {
 	overflow: hidden !important;

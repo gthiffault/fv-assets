@@ -27,7 +27,8 @@ h2.c-page-title {
 }
 
 h2,
-html#ecwid_html body#barba\-wrapper .ec-size.ec-size--l .ec-store h1 {
+html#ecwid_html body#barba\-wrapper .ec-size.ec-size--l .ec-store h1.page-title__name,
+h1.page-title__name {
   font: 700 36px/40px poppins, sans-serif !important;
   letter-spacing: 2px !important;
 }

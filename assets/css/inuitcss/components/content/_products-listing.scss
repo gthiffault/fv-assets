@@ -122,11 +122,21 @@ transition: all 0.3s linear;
 			margin-bottom: 40px !important;
 			margin-top: 72px !important;
 		}
+
+
+.ec-related-products__products.ec-grid {
 		.grid__products {
 			.grid-product {
-				width: 50% !important;
+				width: 20% !important;
+				}
+				}	
+}
+
+		.grid__products {
+			.grid-product {
+				width: 33% !important;
 				.grid-product__wrap {
-					padding: 24px !important;
+					padding: 12px !important;
 					.grid-product__wrap-inner {
 						background: #FFF !important;
 						.grid-product__title-inner,
@@ -138,7 +148,7 @@ transition: all 0.3s linear;
 						.grid-product__title-inner {
 							padding-top: 24px !important;
 							margin-top: 0 !important;
-							margin-bottom: 16px !important;
+							margin-bottom: 8px !important;
 						}						
 						.grid-product__price-amount {
 							font-size: 16px !important;
@@ -161,7 +171,6 @@ transition: all 0.3s linear;
 						    	// padding-right: 48px !important;		
 						    	position: relative !important;
 								font-weight: 700 !important;
-								box-shadow: none !important;
 								border-radius: 0 !important;
 								min-height: 28px !important;
 						    	// &:after {
@@ -189,6 +198,7 @@ transition: all 0.3s linear;
 
 	.c-sidebar {
 		display: none;
+		width: 478px;
 	}	
 
 
@@ -211,7 +221,7 @@ transition: all 0.3s linear;
 	&.c-products {
 		opacity: 1;
 		.c-product_info {
-			width: 60%;	
+			width: calc(100% - 478px);	
 		}
 	}
 }	
@@ -268,4 +278,9 @@ div#ecwid_yotpo_rating a {
 
 .svg-line-check {
 	stroke: #46823C !important;
+}
+
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__wrap-inner:hover .grid-product__picture {
+	transform: none !important;
 }

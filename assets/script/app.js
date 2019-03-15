@@ -18,7 +18,7 @@
   window.ec.storefront = window.ec.storefront || Object();
   window.ec.storefront.show_breadcrumbs = false; // hides the sign in link
   window.ec.storefront.show_footer_menu = true; // hides the sign in link
-window.ec.storefront.product_list_show_sort_viewas_options = false; // hides the sign in link
+window.ec.storefront.product_list_show_sort_viewas_options = true; // hides the sign in link
 
 
   	$('.c-favorite').on('click',function() {
@@ -2135,16 +2135,14 @@ var zP = $('.c-zip-code').html();
   	if (this.value.replace(/[_-]/g, '').length === 7) {
 		setTimeout(function() {
 			$('.c-zipcode').each(function (index, value){
-				$('.c-zipcode').closest('.c-dayname').innerHTML
-				alert($(this).closest('.c-dayname').innerHTML);
 				var link = $(this).html();
 			  		if (link.indexOf(current.value.substring(0, 3)) >= 0) {
 			  			boolTwo = true;
-			  			$('.c-state').html();
+			  			$('.c-state').html('Journée de livraison : ' + $('.c-zipcode').next('.c-dayname').html());
 			  		} else {
 			  			if(boolTwo != true) {
 			  				boolTwo = false;
-			  				$('.c-state').html('Failed');
+			  				$('.c-state').html('Communiquez avez nous pour connaître votre journée de livraison');
 			  			}
 			  		}
 			});
@@ -2387,17 +2385,5 @@ var myElement = document.querySelector(".c-menu-001");
 // construct an instance of Headroom, passing the element
 var headroom  = new Headroom(myElement);
 // initialise
-headroom.init({
-
-}); 
-
-		$(".c-menu-001").headroom({
-			tolerance:40,
-			offset:250
-		});
-
-
-$('.footer__link--sign-out').on('click', function() {
-$.cookie("name", null, { path: '/' });
-})
+headroom.init(); 
 

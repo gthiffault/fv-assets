@@ -42,7 +42,6 @@
   line-height: 28px !important;
   letter-spacing: 0.58px !important;
   color: $colorTwo !important;
-  box-shadow: none !important;
   padding:0 0 24px 0 !important;
   &,
   &:hover,
@@ -53,6 +52,11 @@
     border: none !important;
   }
 
+span {
+  font-size: 12px !important;
+  line-height: 18px !important;
+  letter-spacing: 0.58px !important;  
+}
 
   &:hover,
   &:focus {
@@ -63,8 +67,23 @@
 
 }
 
+
+html#ecwid_html body#barba\-wrapper .ecwid span  {
+  span {
+  font-size: 12px !important;
+  line-height: 18px !important;
+  letter-spacing: 0.58px !important;  
+}
+}
+
+html#ecwid_html body#barba\-wrapper .ecwid .ecwid-btn--actionOK>span {
+    font-size: 12px !important;
+}
+
+
+
   .ecwid span {
-  font-size: 16px !important;
+  font-size: 13px !important;
   line-height: 28px !important;
   letter-spacing: 0.58px !important;
     color: $colorTwo !important;
@@ -217,10 +236,8 @@
 
 
 .c-btn--tertiary,
-.ecwid-btn--secondary,
-.details-product-purchase__controls .form-control__button,
-html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button,
-.ecwid-btn--primary {
+.ecwid-btn--secondary
+ {
       background-color: transparent;
       border: 1px solid $colorThree;
       color: $colorThree;
@@ -336,8 +353,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
       &.ecwid-btn--apply,
       &.ecwid-btn--changeOptions,
       &.ecwid-btn--changeAddress,
-      &.form-control__button,
-      &.ecwid-btn--primary {
+      &.form-control__button{
         padding-right: 20px !important;
 
         &:after {
@@ -394,14 +410,23 @@ min-width: 128px !important;
 margin-right: 20px !important;
 }
 
-html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button,
-.ecwid-btn--primary {
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button {
   border: 1px solid $colorTwo !important;
-  box-shadow: none !important;
   padding: 12px 20px !important;
   background: transparent !important;
   span {font-weight: 700 !important;}
-&:before {
+
+}
+
+
+.ecwid-btn--primary {
+padding: 8px 12px !important;
+  border: 1px solid $colorTwo !important;
+  background: transparent !important;
+  min-width: 10px !important;
+  span {font-weight: 700 !important;}
+&:before,
+&:after {
   display: none;
 }
 }
@@ -485,6 +510,16 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
 }  
 }
 
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .form-control .form-control__button.form-control__button {
+  padding: 8px 12px !important;
+
+}  
+
+html#ecwid_html body#barba\-wrapper .ecwid .form-control__button.form-control__button {
+  span {
+    font-size: 12px !important;
+  }
+}
 
 /* Size variants
    ========================================================================== */
@@ -559,4 +594,21 @@ $btn-ghost-border-width: 2px;
 
   }
 
+}
+
+
+
+
+.ecwid-btn--primary,
+button.form-control__button.form-control__button--icon-center {
+      background-color: transparent !important;
+      border: 1px solid $colorThree !important;
+      color: $colorThree !important;
+      font-size: 24px !important !important;
+      padding-right: 80px !important !important;
+      position: relative !important !important;  
+  transition: box-shadow .3s !important;
+  &:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.8) !important;     
+}
 }

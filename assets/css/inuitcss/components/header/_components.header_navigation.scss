@@ -1,6 +1,5 @@
 .c-header_nav {
 	display: flex;
-	transition: all 0.15s linear;	
 	z-index: 36;
 	position: relative;
 	padding: 48px 0 108px 0;
@@ -152,8 +151,16 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
 	}
 }
 .c-header_nav {
-	padding-top: 80px;
-	padding: 80px  $paddingOne 0;
+	padding: 18px  $paddingOne;
+	position: relative;
+	top: 36px;
+	&:before {
+	position: absolute;
+	height: 36px;
+	width: 100%;
+	background: #FFF;
+	z-index: 23424234
+	}
 }
 
 
@@ -3921,10 +3928,7 @@ header {
 }
 
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned {
-    top: 36px;
-  -webkit-animation-name: slideInDown;
-  animation-name: slideInDown;    
-  transition: slideInDown 0.1s linear;
+    top: 0;
 }
 
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
@@ -3933,10 +3937,10 @@ header {
     width: 100%;
     padding-top: 0;
     background: rgba(255,255,255,0.7c-menu_wra);
-    	transition: background 0.1s 0.05s linear;
+    	
     z-index: 9993;	
     .c-header_nav {
-    	padding-top: 18px;
+    	padding-top: 54px;
     	padding-bottom: 18px;
     }
     .c-header_logo {
@@ -3950,7 +3954,7 @@ header {
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
 background: rgba(26,26,26,0.7);
-transition: background 0s 0s linear;
+
 }	
 }
 
@@ -3959,7 +3963,7 @@ transition: background 0s 0s linear;
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
 
 	background: transparent;
-	transition: background 0.2s 0.35s linear;
+	
 }	
 
 .homePage {
@@ -3967,7 +3971,7 @@ transition: background 0s 0s linear;
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
 
 	background: transparent;
-	transition: background 0s 0.45s linear;
+	
 }	
 }
 
@@ -3975,10 +3979,8 @@ transition: background 0s 0s linear;
 }
 
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
-  -webkit-animation-name: slideOutUp;
-  animation-name: slideOutUp;    
-  transition: slideOutUp 0.1s linear;
-    top: 0px;
+
+    top: 0;
 
 }
 
@@ -3986,7 +3988,7 @@ transition: background 0s 0s linear;
 .js-menu-active {
 	.c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
 	.c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
-    top: 36px;
+    top: 0;
 
 	}
 }
@@ -4017,4 +4019,32 @@ transition: background 0s 0s linear;
     display: block;
     visibility: hidden;
     display: none;
+}
+
+.c-menu-001.headroom.headroom--not-top.headroom--bottom.headroom--unpinned {
+	display: none;
+}
+
+.c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
+.c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
+	.c-header_nav {
+    	top: 0 !important;
+	}
+}	
+
+.c-banner_homepage {
+	padding-top: 36px;
+}
+
+body {
+	position: relative;
+	&:before {
+    position: fixed;
+    content: "";
+    height: 36px;
+    width: 100%;
+    background: #FFF;
+    top: 0;
+    z-index: 21234;
+	}
 }
