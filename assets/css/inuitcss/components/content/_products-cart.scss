@@ -414,3 +414,7 @@ html#ecwid_html body#barba\-wrapper .ecwid .grid-product__wrap a {
   font-size: 13px !important;
   line-height: 20px !important;
 }
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store .ec-store__content-wrapper:not(.ec-store__content-wrapper--wide) {
+  max-width: 100% !important;
+}
