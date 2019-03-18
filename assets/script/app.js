@@ -840,7 +840,7 @@ if($('.c-delivery').length) {
 		      			"color": colorOne,
 		      			"title": "Repentigny",
 		      			"latlng": "45.506995, -73.553766",
-		      			"deliveryDay" : "Mercredi"
+		      			"deliveryDay" : "Mardi"
 		    		}
 			  	],
 				[
@@ -879,7 +879,7 @@ if($('.c-delivery').length) {
 						"color": colorOne,
 						"title": "Bromont",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Mardi"
 					}
 				],
 				[
@@ -904,7 +904,7 @@ if($('.c-delivery').length) {
 						"color": colorOne,
 						"title": "Salaberry-de-Valleyfield",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Mardi"
 					}
 				],
 				[
@@ -928,7 +928,7 @@ if($('.c-delivery').length) {
 						"color": colorOne,
 						"title": "Huntingdon",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Mardi"
 					}
 				],
 				[
@@ -991,7 +991,7 @@ if($('.c-delivery').length) {
 						"color": colorOne,
 						"title": "Ouest de l’île",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Mardi"
 					}
 				],
 				[
@@ -1004,7 +1004,7 @@ if($('.c-delivery').length) {
 						"color": colorOne,
 						"title": "Plateau Mont-Royal",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Mardi"
 					}
 				],
 				[
@@ -1025,7 +1025,7 @@ if($('.c-delivery').length) {
 						"color": colorOne,
 						"title": "Ahuntsic / Saint-Léonard / Anjou",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Mardi"
 					}
 				],
 
@@ -1255,20 +1255,6 @@ if($('.c-delivery').length) {
 					],
 				    [ 
 				    	[
-							{lat: 45.512910, lng: -73.553251},
-							{lat: 45.501342, lng: -73.561634},
-							{lat: 45.498109, lng: -73.552537},
-							{lat: 45.515447, lng: -73.544638}
-						],
-						{
-							"color": colorTwo,
-							"title": "Vieux-Montréal",
-							"latlng": "45.506995, -73.553766",
-							"deliveryDay" : "Mercredi"
-						}
-					],
-				    [ 
-				    	[
 							{lat: 45.477130, lng: -75.736714},
 							{lat: 45.475265, lng: -75.730774},
 							{lat: 45.472680, lng: -75.727497},
@@ -1309,7 +1295,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Ville Mont-Royal",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1345,7 +1331,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Westmount",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1364,7 +1350,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "LaSalle",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1385,7 +1371,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Verdun",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1439,7 +1425,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Châteauguay",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1469,7 +1455,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Brossard",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1502,7 +1488,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Longueuil",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1544,7 +1530,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Saint-Bruno",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1565,7 +1551,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Boucherville",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1597,7 +1583,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Saint-Hilaire",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1621,7 +1607,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Saint-Hyacinthe",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 				[
@@ -1672,7 +1658,7 @@ if($('.c-delivery').length) {
 						"color": colorThree,
 						"title": "Saint-Jean-sur-Richelieu",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Jeudi"
 					}
 				],
 
@@ -1719,7 +1705,7 @@ if($('.c-delivery').length) {
 						"color": colorFour,
 						"title": "Drummondville",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Vendredi"
 					}
 				],
 				[
@@ -1767,7 +1753,7 @@ if($('.c-delivery').length) {
 						"color": colorFour,
 						"title": "Sherbrooke",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Vendredi"
 					}
 				],
 				[
@@ -1785,7 +1771,7 @@ if($('.c-delivery').length) {
 						"color": colorFour,
 						"title": "Magog",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Vendredi"
 					}
 				],
 				[
@@ -1805,7 +1791,7 @@ if($('.c-delivery').length) {
 						"color": colorFour,
 						"title": "Granby",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Mercredi"
+						"deliveryDay" : "Vendredi"
 					}
 				],
 			];

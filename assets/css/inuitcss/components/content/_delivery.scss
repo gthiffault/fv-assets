@@ -30,6 +30,7 @@
 
 
 
+
 .-js-c-category  {
 	.c-sidebar,
 	.c-product_info {
@@ -933,4 +934,9 @@ html#ecwid_html body#barba\-wrapper td.ecwid-productBrowser-cart-itemsTable-head
 	img {
 		opacity: 0.75 !important;
 	}
+}
+
+
+p.c-zipcode {
+	display: none !important;
 }
