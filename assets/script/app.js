@@ -2123,7 +2123,7 @@ var zP = $('.c-zip-code').html();
 				var link = $(this).html();
 			  		if (link.indexOf(current.value.substring(0, 3)) >= 0) {
 			  			boolTwo = true;
-			  			$('.c-state').html('Journée de livraison : ' + $('.c-zipcode').next('.c-dayname').html());
+			  			$('.c-state').html('Journée de livraison : ' + $(this).next('.c-dayname').html());
 			  		} else {
 			  			if(boolTwo != true) {
 			  				boolTwo = false;
