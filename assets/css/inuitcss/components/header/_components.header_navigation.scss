@@ -3936,7 +3936,7 @@ header {
     position: fixed;
     width: 100%;
     padding-top: 0;
-    background: rgba(255,255,255,0.7c-menu_wra);
+    background: rgba(255,255,255,0.7);
     	
     z-index: 9993;	
     .c-header_nav {
@@ -3961,7 +3961,7 @@ background: rgba(26,26,26,0.7);
 .js-menu-active {
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
-
+    transition: background 0s 0.3s linear;
 	background: transparent;
 	
 }	
@@ -3969,7 +3969,7 @@ background: rgba(26,26,26,0.7);
 .homePage {
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned,
 .c-menu-001.headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned {
-
+    transition: background 0s 0.5s linear;
 	background: transparent;
 	
 }	
