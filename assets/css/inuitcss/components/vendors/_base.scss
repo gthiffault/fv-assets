@@ -48,7 +48,21 @@
   }
   .hamburger-label {
     border: 2px solid #2a2a2a;
-    padding: 19px 36px;
+    
+    @media (min-width:320px) { 
+      display: none;
+    } 
+    @media (min-width:600px) { 
+      & {
+          padding: 10px 22px;
+          display: inline-block;
+      }
+    }     
+    @media (min-width:960px) { 
+      & {
+          padding: 19px 36px;
+      }
+    }         
     display: inline-block;
     vertical-align: top;
     color: #2a2a2a;
@@ -79,8 +93,18 @@
 }
 
 .hamburger-box {
+    @media (min-width:320px) { 
+      & {
+width: 52px;
+height: 52px;
+      }
+    } 
+    @media (min-width:960px) { 
+      & {
   width: 70px;
   height: 70px;
+      }
+    }    
   display: inline-block;
   position: relative;
   border: 2px solid #2a2a2a;
@@ -114,7 +138,16 @@
   display: block;
   top: 50%;
   margin-top: $hamburger-layer-height / -2;
+    @media (min-width:320px) { 
+      & {
+  left: 10px;
+      }
+    } 
+    @media (min-width:960px) { 
+      & {
   left: 21px;
+      }
+    }   
   &,
   &::before,
   &::after {

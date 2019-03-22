@@ -14,8 +14,18 @@ $inuit-wrapper-width: 1564px !default;
 
 .o-wrapper {
   @include inuit-clearfix();
-  padding-right: $paddingOne;
-  padding-left:  $paddingOne;
+  @media (min-width:320px) {
+    padding-right: $paddingThree;
+    padding-left: $paddingThree;
+  }
+  @media (min-width:720px) {
+    padding-right: $paddingTwo;
+    padding-left: $paddingTwo;
+  } 
+  @media (min-width:1280px) {
+    padding-right: $paddingOne;
+    padding-left: $paddingOne;
+  }
   margin-right: auto;
   margin-left:  auto;
   max-width: $inuit-wrapper-width;

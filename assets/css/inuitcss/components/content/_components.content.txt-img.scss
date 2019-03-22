@@ -1,5 +1,7 @@
 .c-txt-img_wrap {
-	background: #FCF7F1;
+	@media (min-width:1024px) { 
+		background: #FCF7F1;
+	}	
 	position: relative;
 	.c-txt-img_img {
 		&.-page {
@@ -61,9 +63,15 @@
 		}
 	}
 	.c-txt-img_txt {
+			@media (min-width:320px) {
+				margin-bottom: 36px;
+			}
+				@media (min-width:1024px) { 
 	    position: absolute;
 	    transform: translate(0%,-50%);
 	    top: 50%;
+	    margin-bottom: 0;
+	}
 	    &.-img {
 	    	right: 0;	
 	    	.c-txt-img_txt_wrap{
@@ -72,17 +80,39 @@
 	    }
 		.c-txt-img_txt_content {
 			background: $colorThree;
-			padding: 48px;
+	@media (min-width:320px) {
+		padding: $paddingOne $paddingThree;
+	}
+	@media (min-width:480px) {
+		padding: $paddingOne $paddingTwo;
+	}	
+	@media (min-width:1024px) {
+		padding: $paddingOne;
+	}
 			p:last-child {
 				margin-bottom:0;
 			}
 		}
 	}
-	.o-wrapper {
-	    position: absolute;
-	    height: 100%;
-	    left: 50%;
-	    transform: translate(-50%,0);
-	    width: 100%;
+	@media (min-width:320px) { 
+		.o-wrapper {
+	    	position: unset;
+	    	height: unset;
+	    	left: unset;
+	    	transform: none;
+	    	width: unset;
+	    	padding: 0;
+		}
+	}	
+	@media (min-width:1024px) { 
+		.o-wrapper {
+	    	position: absolute;
+	    	height: 100%;
+	    	left: 50%;
+	    	transform: translate(-50%,0);
+	    	width: 100%;
+	    	padding: 0 36px;
+	    	top: 0;
+		}
 	}
 }

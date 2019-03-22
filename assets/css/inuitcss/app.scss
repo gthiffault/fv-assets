@@ -73,7 +73,7 @@
  * Print................Reset-like styles taken from the HTML5 Boilerplate.
  * Hide.................Helper classes to hide content
  */
-
+@import "var";
 // SETTINGS
 @import "settings/example.settings.config";
 @import "settings/settings.core";
@@ -83,10 +83,12 @@
 
 
 
+
 // TOOLS
 @import "tools/tools.font-size";
 @import "tools/tools.clearfix";
 @import "tools/tools.hidden";
+@import "tools/mq";
 
 
 
@@ -166,8 +168,6 @@
 	@import "components/base/components.base.footer";
 
 
-@import "components/vendors/hamburgers";
-@import "components/vendors/slick";
 
 
 
@@ -186,3 +186,6 @@ $inuit-offsets: true;
 @import "utilities/utilities.print";
 @import "utilities/utilities.hide";
 @import "utilities/typo";
+
+@import "components/vendors/hamburgers";
+@import "components/vendors/slick";

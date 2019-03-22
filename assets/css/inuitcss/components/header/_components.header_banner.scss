@@ -66,9 +66,21 @@ bottom: 124px;
     transform: translate(-50%);
     top: 48px;
     z-index: 21236;
+    @media (min-width:320px) { 
+        display: none;
+    }  
+    @media (min-width:960px) { 
+        display:block;
+    }       
 }    
 
 .c-roll {
+    @media (min-width:320px) { 
+        display: none;
+    }  
+    @media (min-width:960px) { 
+        display:block;
+    }    
     position: absolute;
     transition: top 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     left: 50%;

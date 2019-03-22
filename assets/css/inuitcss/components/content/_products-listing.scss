@@ -6,7 +6,7 @@
 		position: absolute;
 		content: "";
 		height: 100%;
-		width: 36px;
+		width: $paddingOne;
 		background: #FFF;
 		left: 0;
 		top: 0;
@@ -16,7 +16,7 @@
 		position: absolute;
 		content: "";
 		height: 100%;
-		width: 36px;
+		width: $paddingOne;
 		background: #FFF;
 		right: 0;
 		top: 0;
@@ -62,7 +62,7 @@
 color: #2a2a2a;
     text-decoration: none;
     line-height: 22px;
-    font-size: 16px;					
+    font-size: 14px;					
 					&:hover {
 						cursor:pointer;
 					}
@@ -113,7 +113,7 @@ transition: all 0.3s linear;
 		    color: #2a2a2a;
 		    text-decoration: none;
 		    line-height: 22px;
-		    font-size: 16px;
+		    font-size: 14px;
 		}
 	}
 
@@ -133,11 +133,70 @@ transition: all 0.3s linear;
 }
 
 		.grid__products {
+  display: block;
+  /* [1] */
+  margin: 0;
+  /* [2] */
+  padding: 0;
+  /* [2] */
+  list-style: none;
+  /* [1] */
+  margin-left: -24px !important;
+  margin-right: 0 !important;
+  /* [3] */
+  font-size: 0; 	
+  /* [1] */
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+
+
 			.grid-product {
-				width: 33% !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  /* [1] */
+  display: inline-block !important;
+  /* [2] */
+  vertical-align: top !important;
+  /* [3] */
+  width: 100% !important;
+  /* [4] */
+  padding-left: 24px !important;
+  /* [5] */
+  font-size: 16px !important;
+  /* [6] */
+  font-size: 1rem !important;	
+  margin-bottom: 24px !important;		
+  padding-bottom: 70px !important;
+  position: relative !important;
+  	background: #FFF !important;
+&:after {
+	position: absolute !important;
+	content: "" !important;
+	width: 24px !important;
+	height: 100% !important;
+	top: 0 !important;
+	left: 0 !important;
+	background: $colorFour;
+}
+		@media (min-width:600px) { 
+			width:50% !important;
+		}
+		@media (min-width:1160px) { 
+			width:33.33% !important;
+		}
+		@media (min-width:1440px) { 
+			width:25% !important;
+		}
+
+
 				.grid-product__wrap {
-					padding: 12px !important;
+					padding: 0 !important;
+					position: static !important;
 					.grid-product__wrap-inner {
+						position: static !important;
 						background: #FFF !important;
 						.grid-product__title-inner,
 						.grid-product__price,
@@ -149,14 +208,22 @@ transition: all 0.3s linear;
 							padding-top: 24px !important;
 							margin-top: 0 !important;
 							margin-bottom: 8px !important;
+							position: relative !important;
+							z-index: 2342;
 						}						
 						.grid-product__price-amount {
 							font-size: 16px !important;
 							margin-bottom: 12px !important;
+							position: relative !important;
+							z-index: 2342;							
 						}
 						.grid-product__button.grid-product__buy-now {
-							margin-bottom: 24px !important;
 							text-align: right !important;
+							position: absolute !important;
+							bottom: 24px;
+							right: 0;
+							width: 100% !important;
+
 						}
 						.grid-product__title {
 							margin-top: 0 !important;
@@ -198,7 +265,7 @@ transition: all 0.3s linear;
 
 	.c-sidebar {
 		display: none;
-		width: 478px;
+		width: 360px;
 	}	
 
 
@@ -212,6 +279,16 @@ transition: all 0.3s linear;
 	.c-product_info {
 		display: inline-block;
 	}
+	@media (min-width:320px) { 
+		.c-sidebar {
+			display: none;
+		}
+	}
+	@media (min-width:960px) { 
+		.c-sidebar {
+			display: inline-block;
+		}
+	}
 
 .c-sidebar,
 .ecwid-productBrowser-CategoryPage {
@@ -220,9 +297,26 @@ transition: all 0.3s linear;
 
 	&.c-products {
 		opacity: 1;
-		.c-product_info {
-			width: calc(100% - 478px);	
+		@media (min-width:320px) { 
+			.c-product_info {
+				width: 100%;
+				max-width: 400px;
+			}
+		}		
+		@media (min-width:600px) { 
+			.c-product_info {
+				max-width: 720px;
+			}
 		}
+		@media (min-width:960px) { 
+			.c-product_info {
+				width: calc(100% - 360px);	
+				max-width: 100%;
+			}
+		}
+
+
+
 	}
 }	
 html#ecwid_html body#barba\-wrapper div.ecwid-productBrowser-CategoryPage {

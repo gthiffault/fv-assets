@@ -26,6 +26,17 @@ $colorSix	: #FCF8F1;
 
 $paddingOne : 36px;
 
+$paddingTwo : 24px;
+$paddingThree : 12px;
+
+
+
+	@mixin space() {
+		@media (min-width:1280px) { 
+			margin-top: $space-one;
+		}
+	}	
+
 
 html {
   font-size: ($inuit-global-font-size / 16px) * 1em; /* [1] */
@@ -55,14 +66,26 @@ html#ecwid_html body#barba\-wrapper div.ecwid-productBrowser {
 
 
 .c-border {
-	padding-right: 36px;
-	padding-left: 36px;
-	margin-bottom: 36px;
-	 overflow: hidden;
+	@media (min-width:320px) {
+		padding-right: $paddingThree;
+		padding-left: $paddingThree;
+		margin-bottom: $paddingOne;
+	}
+	@media (min-width:480px) {
+		padding-right: $paddingTwo;
+		padding-left: $paddingTwo;
+		margin-bottom: $paddingOne;
+	}	
+	@media (min-width:1024px) {
+		padding-right: $paddingOne;
+		padding-left: $paddingOne;
+		margin-bottom: $paddingOne;
+	}
+	overflow: hidden;
 }
 
 header {
-	border-bottom: 36px;
+	border-bottom: $paddingOne;
 }
 
 
@@ -132,8 +155,7 @@ $menuWith	: calc(100% - ($paddingOne * 2));
 	background: #e3e3e3;
 }    
 
-
-
+	@media (min-width:1440px) { 
 .c-page_wrap {
 	padding-left: 156px;
 }
@@ -145,13 +167,14 @@ $menuWith	: calc(100% - ($paddingOne * 2));
 .c-page-padding_three {
 	padding-left: 223px;
 }
+	}
+
+
 
 
 .c-wrapper-zero {
 	max-width: 1243px;
 }
-
-
 
 
 .o-wrap-zero {

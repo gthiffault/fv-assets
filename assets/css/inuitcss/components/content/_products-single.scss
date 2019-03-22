@@ -68,7 +68,7 @@ div#ecwid_yotpo_rating {
 		position: relative;
 	&:after {
 		position: absolute;
-		height: 36px;
+		height: $paddingOne;
 		width: 200vw;
 		background: #FFF;
 		content: "";
@@ -81,10 +81,10 @@ div#ecwid_yotpo_rating {
 
 .product-details.product-details--layout-sidebar-right.product-details--description-side {
 	position: relative !important;
-	padding-bottom: 36px !important;
+	padding-bottom: $paddingOne !important;
 	&:after {
 		position: absolute;
-		height: 36px;
+		height: $paddingOne;
 		width: 200vw;
 		background: #FFF;
 		content: "";
@@ -113,13 +113,13 @@ div#ecwid_yotpo_rating {
 		background: $colorFive;
 		padding-bottom: 72px !important;
 		position: relative !important;
-		padding-top: 36px;
+		padding-top: $paddingOne;
 		&:before {
 			position: absolute;
 			content: "";
 			top: 0;
 			width: 300vw;
-			height: 36px;
+			height: $paddingOne;
 			left: -50vw;
 			background: #FFF;
 			z-index: 34;

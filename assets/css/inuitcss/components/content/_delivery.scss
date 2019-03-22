@@ -649,12 +649,12 @@ html#ecwid_html body#barba\-wrapper .ecwid div.gwt-Label.ecwid-productBrowser-re
 
 
 .ecwid-productBrowser-cart.ecwid-productBrowser-cart-non-compact table:last-child tr:nth-child(5) > td:first-child {
-	padding-bottom: 36px !important;
+	padding-bottom: $paddingOne !important;
 	position: relative !important;
 	&:after {
 		width: 150vw;
 		left: -50vw;
-		height: 36px;
+		height: $paddingOne;
 		background: #FFF;
 		position: absolute;
 		content: '';
