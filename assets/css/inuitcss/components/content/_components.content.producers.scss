@@ -1,6 +1,5 @@
 .c-our-producers {
-	padding-right: $paddingOne;
-	padding-left: $paddingOne;	
+	@include paddingZero();
 	.c-our-producers_wrap {
 		background: #EDF6E5;
 		padding: 88px 0 108px;		
@@ -8,8 +7,12 @@
 			text-align: center;
 			margin-bottom: 80px;
 		}	
-		img {
-			border-radius: 100%;
+		.c-our-producers_content {
+			max-width: 240px;
+			margin:0 auto;
+			img {
+				border-radius: 100%;
+			}
 		}
 	}
 }

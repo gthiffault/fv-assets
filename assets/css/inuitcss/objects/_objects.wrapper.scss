@@ -18,11 +18,11 @@ $inuit-wrapper-width: 1564px !default;
     padding-right: $paddingThree;
     padding-left: $paddingThree;
   }
-  @media (min-width:720px) {
+  @media (min-width:480px) {
     padding-right: $paddingTwo;
     padding-left: $paddingTwo;
   } 
-  @media (min-width:1280px) {
+  @media (min-width:1024px) {
     padding-right: $paddingOne;
     padding-left: $paddingOne;
   }

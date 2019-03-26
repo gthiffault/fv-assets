@@ -158,7 +158,7 @@ $inuit-use-markup-fix: false !default;
 .o-layout--huge {
   margin-left: -$inuit-global-spacing-unit-huge;
 
-  > .o-layout__item {
+  .o-layout__item {
     padding-left: $inuit-global-spacing-unit-huge;
   }
 

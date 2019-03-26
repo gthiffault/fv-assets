@@ -280,7 +280,13 @@ window-xlarge:            1920px
             max-width: 100%;
             outline: none;
             direction: ltr;
-            max-height: 472px !important;
+            max-height: 100% !important;
+          }
+
+          .c-points-of-sale {
+            .mCustomScrollBox {
+            max-height: 472px !important;              
+            }
           }
 
           .mCSB_container{ /* contains the original content */

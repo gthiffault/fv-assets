@@ -22,15 +22,51 @@ $inuit-font-size-h6:  16px !default;
 
 h1,
 h2.c-page-title {
-  font: 700 64px/72px poppins, sans-serif !important;
-  letter-spacing: 2px !important;
+    letter-spacing: 0.031em !important;
+    z-index: 1;
+
+    @media (min-width:320px) { 
+        font: 700 28px/1.125em poppins, sans-serif !important;
+    }
+    @media (min-width:375px) { 
+        font: 700 30px/1.125em poppins, sans-serif !important;
+    }  
+    @media (min-width:400px) { 
+        font: 700 32px/1.125em poppins, sans-serif !important;
+    }   
+    @media (min-width:480px) { 
+        font: 700 36px/1.125em poppins, sans-serif !important;
+    }          
+    @media (min-width:600px) { 
+        font: 700 40px/1.125em poppins, sans-serif !important;
+    }         
+    @media (min-width:720px) { 
+        font: 700 44px/1.125em poppins, sans-serif !important;
+    }       
+    @media (min-width:840px) { 
+        font: 700 48px/1.125em poppins, sans-serif !important;
+    }       
+    @media (min-width:960px) { 
+        font: 700 52px/1.125em poppins, sans-serif !important;
+
+    }       
+    @media (min-width:1024px) { 
+        font: 700 56px/1.125em poppins, sans-serif !important;
+    }     
+    @media (min-width:1280px) { 
+        font: 700 60px/1.125em poppins, sans-serif !important;
+
+    }               
+    @media (min-width:1440px) { 
+        font: 700 64px/1.125em poppins, sans-serif !important;
+    }
 }
 
 h2,
 html#ecwid_html body#barba\-wrapper .ec-size.ec-size--l .ec-store h1.page-title__name,
 h1.page-title__name {
-  font: 700 36px/40px poppins, sans-serif !important;
-  letter-spacing: 2px !important;
+        font: 700 36px/40px poppins, sans-serif !important;
+        letter-spacing: 2px !important;
 }
 
 h3,

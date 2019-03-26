@@ -1,6 +1,5 @@
 .c-newsletter {
-	padding-right: $paddingOne;
-	padding-left: $paddingOne;
+@include paddingZero();
 	.c-newsletter_wrap {
 		background: #F4F6F8;
 		padding: 56px 0;
@@ -28,22 +27,45 @@
 			}
 		}
 	}
+	&.-input {
+		padding: 0;
+
+	}
 }
 
 .c-section {
 	.c-newsletter {
 		paddingg-right: 0;
 		padding-left: 0;
-		float: right;
+		@media (min-width:320px) {
+			float: left;
+			margin-top: 24px;
+
+		.c-newsletter_wrap {
+			text-align: left;
+		}			
+		.c-input {
+						margin-bottom: 16px;
+
+		}
+		}			
+		@media (min-width:1280px) {
+			float: right;
+			margin-top: 0;
+		.c-newsletter_wrap {
+			text-align: right;
+		}			
+		}	
 		.c-newsletter_wrap {
 			padding: 0;
-			text-align: right;
 			background: transparent;	
 		}
 	}
 	.c-page-newsletter_wrap {
 		border: 2px solid #FFF;
-		padding: 48px;
+@include paddingZero();
+padding-top: 48px;
+padding-bottom: 48px;
 		&:after {
   			content: "";
   			display: table;
@@ -59,7 +81,13 @@
 .c-input {
 	position: relative;
 	display: inline-block;
+	margin-bottom: 16px;
+			@media (min-width:320px) {
+	min-width: 100%;
+}	
+			@media (min-width:720px) {
 	min-width: 320px;
+}
 	.parsley-errors-list.filled {
 	    position: absolute;
 	    top: -24px;

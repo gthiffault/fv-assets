@@ -2,9 +2,26 @@
 	@media (min-width:1024px) { 
 		background: #FCF7F1;
 	}	
+	.c-bg_desktop {
+			@media (min-width:320px) { 
+				display: none;
+			}		
+			@media (min-width:1024px) { 
+				display: block;
+			}
+	}
+	.c-img_device {
+			@media (min-width:320px) { 
+				display: block;
+			}		
+			@media (min-width:1024px) { 
+				display: none;
+			}		
+	}
 	position: relative;
 	.c-txt-img_img {
-		&.-page {
+		&.-page,
+		&.-about {
 			height: 766px;
 			.o-wrap-zero {
 				position: absolute;
@@ -63,9 +80,6 @@
 		}
 	}
 	.c-txt-img_txt {
-			@media (min-width:320px) {
-				margin-bottom: 36px;
-			}
 				@media (min-width:1024px) { 
 	    position: absolute;
 	    transform: translate(0%,-50%);
@@ -81,10 +95,10 @@
 		.c-txt-img_txt_content {
 			background: $colorThree;
 	@media (min-width:320px) {
-		padding: $paddingOne $paddingThree;
+		padding: $paddingOne $paddingThree 0 $paddingThree;
 	}
 	@media (min-width:480px) {
-		padding: $paddingOne $paddingTwo;
+		padding: $paddingOne $paddingTwo 0 $paddingTwo;
 	}	
 	@media (min-width:1024px) {
 		padding: $paddingOne;

@@ -1,11 +1,3 @@
-ec-related-products {
-	.grid__products {
-		.grid-product {
-			width: 25% !important;
-		}
-	}
-}
-
 html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid__products[data-cols="6"] .grid-product:nth-child(n+1) {
 	width: 25% !important;
 	display: inline-block !important;

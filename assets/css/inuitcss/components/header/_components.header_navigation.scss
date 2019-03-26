@@ -6,13 +6,13 @@
 
 
   @media (min-width:320px) {
-    padding: 40px  $paddingThree 0;
+    padding: 40px  $paddingThree 24px $paddingThree;
   }
   @media (min-width:480px) {
-    padding: 40px  $paddingTwo 0;
+    padding: 40px  $paddingTwo 24px $paddingTwo;
   } 
   @media (min-width:1024px) {
-    padding: 40px  $paddingOne 0;
+    padding: 40px  $paddingOne 24px $paddingOne;
   }
 
 
@@ -289,8 +289,13 @@ header {
   }
 
     top: 200vh;
-
-    padding-top: 240px;
+    @media (min-width:320px) {
+    	padding-top: 140px;
+    	padding-bottom: 56px;
+    }		    
+    @media (min-width:960px) {
+    	padding-top: 240px;
+    }		
     background: rgba(26,26,26,0.95);
     height: calc(100vh - #{$paddingOne * 2});
 	transition: top 0.5s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955), z-index 0s 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -312,7 +317,12 @@ header {
 		list-style-type: none;
 		margin: 0;
 		li {
-			margin-bottom: 56px;
+			@media (min-width:320px) {
+				margin-bottom: 24px;
+			}			
+			@media (min-width:960px) {
+				margin-bottom: 56px;
+			}
 		}
 	}
 	a {
@@ -334,6 +344,7 @@ header {
 	overflow-y: hidden;
 	width: 100%;
 	.c-menu {
+		overflow-y: auto;
 	top: $paddingOne;
 		transition: top 0.45s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955),z-index 0s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	}

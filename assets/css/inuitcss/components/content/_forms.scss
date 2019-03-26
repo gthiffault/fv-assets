@@ -64,18 +64,23 @@
 
 
 .c-form {
-	padding-right: $paddingOne;
-	padding-left: $paddingOne;
-	&.-job {
-		h2 {
-			text-align: center;
-		}
-	}
+@include paddingZero();
 	.c-background {
 		padding: 80px 0 96px;
 		.c-form_form {
 			background: #FFF;
-			padding: 72px 64px 40px;
+			@media (min-width:320px) {
+				padding: 56px 12px 40px;
+			}				
+			@media (min-width:480px) {
+				padding: 56px 24px 40px;
+			}				
+			@media (min-width:1024px) {
+				padding: 56px 36px 40px;
+			}				
+			@media (min-width:1280px) {
+				padding: 72px 64px 40px;
+			}			
 			&:after {
 		  		content: "";
 		  		display: table;
