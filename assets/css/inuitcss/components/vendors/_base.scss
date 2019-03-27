@@ -48,7 +48,7 @@
   }
   .hamburger-label {
     border: 2px solid #2a2a2a;
-    
+    background: #FFF;
     @media (min-width:320px) { 
       display: none;
     } 
@@ -93,6 +93,7 @@
 }
 
 .hamburger-box {
+  background: #FFF;
     @media (min-width:320px) { 
       & {
 width: 52px;

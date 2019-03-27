@@ -4,6 +4,9 @@
 		padding: 96px 0 72px 0;
 		.c-grid {
   			display: grid;
+  			@media (max-width:719px) and (min-width:320px) {   	
+  				text-align: center;
+  			}		
 			@media (min-width:720px) {   			
   				grid-template: repeat(4, [row] minmax(120px, 1fr)) / repeat(10, [col] 1fr);
   			}	  			

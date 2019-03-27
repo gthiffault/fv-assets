@@ -514,7 +514,8 @@ Ecwid.OnPageLoaded.add(function(page) {
   widgets = Ecwid.getInitializedWidgets();
 
   	$('.c-ecwid_item').addClass('-page-load')
-
+	$('.c-sidebar').removeClass('-js-filter-active');
+	$('html').removeClass('-js-hfilter-active');
 	if($('.ecwid-customer-loggedIn').length) {
 		$('.ecwid-productBrowser-auth-signOutLink').show();
 		$('.c-connect').hide();
@@ -657,19 +658,15 @@ if(page.type == "ACCOUNT_SETTINGS" || page.type == "ORDERS" || page.type == "ADD
   	} else {
   		$('html').removeClass('js-ecwid-page');
   	}
-
-
-
 },100);
-
-
 });
 
 
 Ecwid.OnPageLoad.add(function(page){
 
 
-
+$('.c-sidebar').removeClass('-js-filter-active');
+$('html').removeClass('-js-hfilter-active');
 
 
 
@@ -2216,6 +2213,8 @@ $('#zip').inputmask({ });
   var hamburger = document.querySelector(".hamburger");
   // On click
   hamburger.addEventListener("click", function() {
+	$('.c-sidebar').removeClass('-js-filter-active');
+	$('html').removeClass('-js-hfilter-active');  	
     // Toggle class "is-active"
     hamburger.classList.toggle("is-active");
     $('html').toggleClass('js-menu-active')
@@ -2417,3 +2416,7 @@ $(function () {
 // 					.addIndicators()
 // 					.addTo(controller);															
 
+$('.c-filter').on('click',function() {
+	$('.c-sidebar').toggleClass('-js-filter-active');
+	$('html').toggleClass('-js-hfilter-active');
+})

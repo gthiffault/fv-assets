@@ -101,7 +101,6 @@ transition: all 0.3s linear;
 
 		.ec-page-title {
 			margin-bottom: 40px !important;
-			margin-top: 72px !important;
 		}
 
 
@@ -242,6 +241,7 @@ transition: all 0.3s linear;
 	.c-sidebar {
 		display: none;
 		width: 360px;
+
 	}	
 
 
@@ -251,18 +251,35 @@ transition: all 0.3s linear;
 }
 
 .-js-c-category  {
+	position: relative;
 	.c-sidebar,
 	.c-product_info {
 		display: inline-block;
 	}
-	@media (min-width:320px) { 
+	@media (min-width:320px) and (max-width:959px) { 
 		.c-sidebar {
-			display: none;
+		    display: inline-block;
+		    position: absolute;
+		    width: calc(100% - 48px);
+		    height: 100vh;
+		    left: calc(-100% - 48px);
+		    top: 48px;
+		    z-index: 243;
+		    padding: 0 !important;
+		    background: rgba(26,26,26,0.7);
+		    		transition: left 0.3s linear;
+		    &.-js-filter-active {
+		    			transition: left 0.3s linear;
+		    	left: 24px;
+		    }
 		}
 	}
 	@media (min-width:960px) { 
 		.c-sidebar {
-			display: inline-block;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    width: 360px;
 		}
 	}
 
@@ -356,14 +373,10 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store.ec-store__checkout-page .
 	}
 }
 
-
 .ec-cart__sidebar-inner .ec-page-title h1,
 .ec-cart__body-inner .ec-page-title h1 {
 	display: none !important;
 }
-
-
-
 
 div#ecwid_yotpo_rating a {
 	color: #2A2A2A !important;
@@ -386,4 +399,49 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__wrap-inner
 
 .ecwid-SingleProduct-v2 {
 	background: transparent !important;
+}
+
+
+.c-filter {
+	display: none;
+}
+
+.-js-c-category .c-filter {
+			@media (max-width:959px) { 
+	display: block;
+	position: relative;
+	z-index: 8
+}
+}
+
+		@media (max-width:959px) { 
+html {
+	position: relative;
+	&:after {
+		position: absolute;
+    content: "";
+    height: 100%;
+    width: calc(100vw - 48px);
+    background: rgba(26,26,26,0.7);
+    transition: left 0.5s linear;
+    z-index: 4;
+    top: 0;
+    left: -200vw;
+
+}
+}
+html.-js-hfilter-active {
+	position: relative;
+	&:after {
+		position: absolute;
+    content: "";
+    height: 100%;
+    width: calc(100vw - 48px);
+    background: rgba(26,26,26,0.7);
+    transition: left 0.2s linear;
+    z-index: 4;
+    top: 0;
+    left: 24px;
+}
+	}
 }

@@ -12,8 +12,11 @@
 	}
 	.c-img_device {
 			@media (min-width:320px) { 
-				display: block;
+				display: none;
 			}		
+			@media (min-width:480px) { 
+				display: block;
+			}					
 			@media (min-width:1024px) { 
 				display: none;
 			}		
@@ -87,7 +90,7 @@
 	    margin-bottom: 0;
 	}
 	    &.-img {
-	    	right: 0;	
+	    	right: 36px;	
 	    	.c-txt-img_txt_wrap{
 
 	    	}

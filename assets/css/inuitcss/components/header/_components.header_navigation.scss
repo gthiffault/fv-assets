@@ -44,6 +44,7 @@
 			border: 2px solid $colorTwo;
 			&.c-ecwid_item.c-cart {
 				margin-left: -6px;
+				background: #FFF;
 			}
 			ul.c-account-management_submenu {
 				background: #FFF;
@@ -153,7 +154,10 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
 		li {
     border-color: #FFF;
     transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+    &.c-cart {
+    		background: transparent;	
 		}
+    }
 	}
 }
 
@@ -319,6 +323,8 @@ header {
 		li {
 			@media (min-width:320px) {
 				margin-bottom: 24px;
+				display: block;
+				padding: 0;
 			}			
 			@media (min-width:960px) {
 				margin-bottom: 56px;
@@ -348,6 +354,27 @@ header {
 	top: $paddingOne;
 		transition: top 0.45s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955),z-index 0s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	}
+
+.c-first-element {
+	margin-top: 40px;
+}
+
+.c-language-switcher {
+	a {
+		font-size: 18px;
+	}
+}
+
+			@media (min-width:320px) {	
+	.c-device_link {
+		display: block !important;
+	}
+}	
+			@media (min-width:960px) {	
+	.c-device_link {
+		display: none !important;
+	}
+}
 	.c-roll {
 		top: -100%;
 	}
