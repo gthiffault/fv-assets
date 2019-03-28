@@ -93,8 +93,6 @@ html#ecwid_html body#barba\-wrapper div.ecwid-fieldWrapper table {
 }
 
 html#ecwid_html body#barba\-wrapper div.ecwid-AddressForm div.ecwid-note {
-  width: 480px !important;
-  max-width: 480px !important;
 }
 
 html#ecwid_html body#barba\-wrapper div.ecwid-EditPersonPopup div.ecwid-popup-content {
@@ -129,9 +127,6 @@ html#ecwid_html body#barba\-wrapper td.ecwid-DateRangeBox-range {
 	padding: 19px 10px !important;
 }
 
-html#ecwid_html body#barba\-wrapper div.ecwid-Orders-SearchPanel .ecwid-DateRangeBox {
-	margin-left: 16px !important;
-}
 
 html#ecwid_html body#barba\-wrapper div.ecwid-form {
 	background: #FFF !important;
@@ -164,4 +159,223 @@ html#ecwid_html body#barba\-wrapper div.ecwid-form {
 
 .ec-footer a:hover svg path {
 	fill: #46823C;
+}
+
+
+
+.ecwid-OrdersList-OrderBox {
+	font-size: 14px !important;
+	// width: calc(100% - 54px) !important;
+	.ecwid-OrdersList-OrderBox-cell.ecwid-OrdersList-OrderBox.ecwid-OrdersList-OrderBox-thumbnail,
+	.ecwid-OrdersList-OrderBox-cell.ecwid-OrdersList-OrderBox-unavailable.ecwid-OrdersList-OrderBox-thumbnail {
+				@media (max-width:781px) {	
+		display: none !important;
+	}
+	}
+		@media (max-width:780px) {   
+	min-width: 272px !important;
+}
+table {
+
+}
+
+}
+
+.ecwid-Orders-SearchPanel {
+	@media (min-width:320px) and (max-width:827px) {   
+		td:first-child {
+			td {
+				width: 100% !important;
+			}
+.ecwid-DateRangeBox {
+	td {
+						width: 100% !important;
+						&.ecwid-DateRangeBox-icon {
+							width: 53px !important;
+						}
+						&.ecwid-DateRangeBox-range {
+							width: 113px !important;
+						}
+	}
+}
+
+		}
+}	
+	@media (min-width:828px) and (max-width:877px) {   
+		td:first-child {
+			td {
+				width: 50% !important;
+			}
+		
+		}
+		td:last-child {
+			width: 25% !important;
+		}	
+}
+@media (max-width:877px) {	
+	tr > td[align="right"]:last-child {
+		margin-left: 0 !important;
+	}
+}	
+@media (min-width:877px) {	
+	tr > td[align="right"]:last-child {
+		margin-left: 20px !important;
+	}
+}	
+			@media (min-width:320px) and (max-width:480px) {
+button,input {
+    min-width: 272px !important;
+    padding: 0 !important;
+    width: 100% !important;
+    margin-bottom: 8px !important;
+    padding: 0 !important;
+}
+button.ecwid-btn.ecwid-btn--secondary.ecwid-btn--orders {
+	font-size: 14px !important;
+}
+}
+			@media (min-width:481px) and (max-width:827px) {
+
+button,input {
+	width: 100% !important;
+	    max-width: 100% !important;
+	        margin-bottom: 8px !important;
+}
+}
+input {
+	padding: 0 !important;
+}
+}
+
+
+
+
+
+html#ecwid_html body#barba\-wrapper div.ecwid-Orders-SearchPanel .ecwid-DateRangeBox {
+		@media (min-width:320px) and (max-width:877px) { 
+		margin-left: 0 !important;
+}
+html#ecwid_html body#barba\-wrapper div.ecwid-Orders-SearchPanel .ecwid-DateRangeBox {
+			@media (min-width:834px) { 
+	margin-left: 16px !important;
+}
+
+}
+}	
+
+
+
+
+
+
+
+html#ecwid_html body#barba\-wrapper div.ecwid-Orders-SearchPanel>table>tbody>tr>td:first-child {
+		@media (max-width:827px) {	
+	width: 100%;
+}	
+		@media (min-width:828px) and (max-width:876px) {	
+	width: calc(100% - 20px);
+}
+}
+
+.c-main {
+span.gwt-InlineLabel.ecwid-ProductBrowser-auth-logged-name,
+a.gwt-Anchor.ecwid-productBrowser-auth-accountLink,
+.ecwid-productBrowser-head {
+	display: none !important;
+}
+}
+.ecwid-AddressForm {
+			@media (max-width:799px) {	
+.ecwid-form,
+.ecwid-note {
+	width: calc(100vw - 52px) !important;
+}
+
+}
+
+			@media (min-width:657px) {	
+.ecwid-form {
+	width: 472px !important;
+
+}
+}
+
+
+}
+.ecwid-AccountSettings {
+
+}
+
+
+
+.ecwid-AccountSettings-NameAndEmail {
+	.ecwid-form {
+		width: auto !important;
+		max-width: 500px !important;
+	input {
+	width: 97.5% !important;
+	    max-width: 97.5% !important;		
+	}		
+	}
+}
+
+
+
+
+
+
+td.ecwid-OrdersList-OrderBox-cell.ecwid-OrdersList-OrderBox-cellEven,
+td.ecwid-OrdersList-OrderBox-cell.ecwid-OrdersList-OrderBox-cellOdd {
+
+	* {
+		width: auto !important;
+		text-align: left !important;
+	}
+}
+
+			@media (max-width:536px) {	
+				.ecwid-DateRangePopup-DateRangeLabel {
+					margin-bottom: 12px !important;
+				}
+.ecwid-DateRangePopup-PresetsPanel tr td {
+	width: 100% !important;
+	display: inline-block !important;
+}
+
+
+html#ecwid_html body#barba\-wrapper .ecwid-DateRangePopup.ecwid tr td {
+		display: inline-block !important;
+}
+
+.ecwid-DateRangePopup.ecwid {
+	max-width: 274px !important;
+}
+
+table.ecwid-DateRangePopup-PresetsPanel {
+    max-width: 242px !important;}
+}
+
+@media (min-width:537px) {	
+
+				.ecwid-DateRangePopup-DateRangeLabel {
+					margin-bottom: 0 !important;
+				}
+
+
+.ecwid-DateRangePopup.ecwid {
+    width: 100% !important;
+    max-width: 468px !important;
+    table {
+    	width: 100% !important;
+    	max-width: 458px !important;
+    }
+}
+
+	.ecwid-DateRangePopup-PresetsPanel { 
+		tr td {
+			width: 30% !important;
+			display: table-cell !important;
+		}
+	}
 }

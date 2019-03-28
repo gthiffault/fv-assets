@@ -2,7 +2,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid__products[data-cols
 	width: 25% !important;
 	display: inline-block !important;
 				.grid-product__wrap {
-					padding: 12px !important;
+					// padding: 12px !important;
 	}	
 }
 
@@ -95,9 +95,9 @@ div#ecwid_yotpo_rating {
 	}
 }
 
-.product-details__product-title {
-	font-size: 0 !important;
-}
+// .product-details__product-title {
+// 	font-size: 0 !important;
+// }
 
 
 .yotpo.yotpo-main-widget {
@@ -167,6 +167,29 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .ec-likely__widget {
 		display: none !important;
 	}
 
-.c-products .ec-related-products .grid__products .grid-product {
+.c-products .ecwid-productBrowser.ecwid-productBrowser-CartPage .ec-related-products .grid__products .grid-product{
+	.grid-product__wrap {
+		padding: 0 !important;
+	}
     padding-bottom: 0 !important;
+}
+
+.c-products .ecwid-productBrowser.ecwid-productBrowser-FavoritesPage .grid__products .grid-product {
+	padding-bottom: 48px !important;
+}
+
+.details-gallery__image-wrapper-inner {
+    pointer-events: none;
+    &:hover {
+    	cursor: default !important;
+    }
+}
+
+
+
+.form-control.form-control--button.form-control--small.form-control--secondary.form-control--done.favorite-product__button-saved,
+.form-control.form-control--button.form-control--small.form-control--secondary.form-control--done.favorite-product__button-add {
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 20px !important;
 }

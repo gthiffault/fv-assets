@@ -310,12 +310,19 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
       &.ecwid-btn--orders,
       &.ecwid-btn--clearBag,
       &.ecwid-btn--continueShopping,
-      &.ecwid-btn--apply {
+      &.ecwid-btn--apply,
+      &.ecwid-btn--date_range_box_button {
           border: 1px solid $colorTwo !important;
           color: $colorTwo !important;
           background: #FFF !important;
+            @media (min-width:320px) { 
+          font-size: 14px !important;
+          min-width: 0 !important;
+          }          
+            @media (min-width:480px) { 
           font-size: 18px !important;
           min-width: 128px !important;
+          }
           text-align: center !important;
       }      
       &.-two,
@@ -325,7 +332,14 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
           border: 1px solid $colorTwo !important;
           color: #FFF !important;
           background: #82B640 !important;
+            @media (min-width:320px) { 
+          font-size: 14px !important;
+          min-width: 0 !important;
+          }          
+            @media (min-width:480px) { 
           font-size: 18px !important;
+                    min-width: 128px !important;
+          }
           &:after {
               background-position: -257px -12px;
           } 
@@ -354,7 +368,8 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
       &.ecwid-btn--apply,
       &.ecwid-btn--changeOptions,
       &.ecwid-btn--changeAddress,
-      &.form-control__button{
+      &.form-control__button,
+      &.ecwid-btn--date_range_box_button{
         padding-right: 20px !important;
 
         &:after {
@@ -362,8 +377,11 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
         }
       }
 
+
 &.ecwid-btn--orders {
-margin-left:41px !important;
+  @media (min-width:828px) {   
+margin-left:20px !important;
+}
 height: 55px !important;      
 }
       &.ecwid-btn--change {
@@ -407,7 +425,6 @@ height: 55px !important;
 
 
 .ecwid-popup-content .ecwid-btn--secondary-inverse {
-min-width: 128px !important;
 margin-right: 20px !important;
 }
 
@@ -463,9 +480,13 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
     background-color: transparent !important;
     border: 1px solid #2a2a2a;
     color: #FFF !important;
-    font-size: 18px !important;
-
-
+            @media (min-width:320px) { 
+          font-size: 14px !important;
+          min-width: 0 !important;
+          }          
+            @media (min-width:480px) { 
+          font-size: 18px !important;
+          }
     position: relative;
     padding: 13px 20px !important;
         padding-right: 80px !important;

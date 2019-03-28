@@ -214,6 +214,13 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
 		}
 	}
 }
+
+
+.c-ecwid_item.c-cart {
+				background: transparent !important;
+			}
+
+
 }
 
 
@@ -237,7 +244,7 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
 	.c-account-management_submenu {
 		display: none;
 		position: absolute;
-		width: 198px;
+		width: 204px;
 		right: -2px;
 	    padding: 14px 32px;
 	    background: #FFF;
