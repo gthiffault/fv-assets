@@ -2185,11 +2185,11 @@ var zP = $('.c-zip-code').html();
 				var link = $(this).html();
 			  		if (link.indexOf(current.value.substring(0, 3)) >= 0) {
 			  			boolTwo = true;
-			  			$('.c-state').html('JournÃƒÆ’Ã‚Â©e de livraison : ' + $(this).next('.c-dayname').html());
+			  			$('.c-state').html('Journée de livraison : ' + $(this).next('.c-dayname').html());
 			  		} else {
 			  			if(boolTwo != true) {
 			  				boolTwo = false;
-			  				$('.c-state').html('Communiquez avez nous pour connaÃƒÆ’Ã‚Â®tre votre journÃƒÆ’Ã‚Â©e de livraison');
+			  				$('.c-state').html('Communiquez avez nous pour connaître votre journée de livraison');
 			  			}
 			  		}
 			});
