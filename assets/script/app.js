@@ -1042,7 +1042,7 @@ if($('.c-delivery').length) {
 					],
 					{
 						"color": colorOne,
-						"title": "Ouest de lÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã‚Â®le",
+						"title": "Ouest de l'Île",
 						"latlng": "45.506995, -73.553766",
 						"deliveryDay" : "Mardi"
 					}
@@ -1076,7 +1076,7 @@ if($('.c-delivery').length) {
 					],
 					{
 						"color": colorOne,
-						"title": "Ahuntsic / Saint-LÃƒÆ’Ã‚Â©onard / Anjou",
+						"title": "Ahuntsic / Saint-Léonard / Anjou",
 						"latlng": "45.506995, -73.553766",
 						"deliveryDay" : "Mardi"
 					}
@@ -1142,7 +1142,7 @@ if($('.c-delivery').length) {
 					],
 					{
 						"color": colorTwo,
-						"title": "QuÃƒÆ’Ã‚Â©bec",
+						"title": "Québec",
 						"latlng": "45.506995, -73.553766",
 						"deliveryDay" : "Mercredi"
 					}
@@ -1282,7 +1282,7 @@ if($('.c-delivery').length) {
 					],
 			   		{
 			      		"color": colorTwo,
-			      		"title": "Sainte-ThÃƒÆ’Ã‚Â©rÃƒÆ’Ã‚Â¨se",
+			      		"title": "Sainte-Thèrese",
 		      		"latlng": "45.646857, -73.842443",
 		      		"deliveryDay" : "Mercredi"						      		
 			    	}
@@ -1320,7 +1320,7 @@ if($('.c-delivery').length) {
 						],
 						{
 						"color": colorTwo,
-						"title": "Vieux-MontrÃƒÆ’Ã‚Â©al",
+						"title": "Vieux-Montréal",
 						"latlng": "45.506995, -73.553766",
 						"deliveryDay" : "Mercredi"
 					}
@@ -1476,7 +1476,7 @@ if($('.c-delivery').length) {
 					],
 					{
 						"color": colorThree,
-						"title": "ChÃƒÆ’Ã‚Â¢teauguay",
+						"title": "Châteauguay",
 						"latlng": "45.506995, -73.553766",
 						"deliveryDay" : "Jeudi"
 					}
