@@ -603,7 +603,7 @@ html#ecwid_html body#barba\-wrapper table.ecwid-productBrowser-cart-rightPanel {
 
 
 .ecwid-productBrowser-relatedProducts {
-	background: #FCF8F1!important;
+	background: $colorSix !important;
 	position: relative !important;
 	padding-top: 72px !important;
 	padding-bottom: 72px !important;
@@ -611,7 +611,7 @@ html#ecwid_html body#barba\-wrapper table.ecwid-productBrowser-cart-rightPanel {
 	&:before {
 	    position: absolute;
 	    content: "";
-	    background: #FCF8F1;
+	    background: $colorSix ;
 	    left: calc((1243px + 109px - 100vw)/2);
 	    width: calc((100vw - 1243px + -109px)/2);
 	    height: 100%;
@@ -621,7 +621,7 @@ html#ecwid_html body#barba\-wrapper table.ecwid-productBrowser-cart-rightPanel {
 	&:after {
 	    position: absolute;
 	    content: "";
-	    background: #FCF8F1;
+	    background: $colorSix ;
 	    right: calc((1243px + 87px - 100vw)/2);
 	    width: calc((100vw - 1243px + -87px)/2);
 	    height: 100%;

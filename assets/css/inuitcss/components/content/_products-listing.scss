@@ -8,7 +8,7 @@
 		background: #FFF;
 		left: 0;
 		top: 0;
-		z-index: 99;
+		z-index: 3;
 		height: 100%;
 	}
 	&:after {
@@ -19,7 +19,7 @@
 		background: #FFF;
 		right: 0;
 		top: 0;
-		z-index: 99;
+		z-index: 3;
 	}	
 }
 
@@ -274,22 +274,42 @@ transition: all 0.3s linear;
 	.c-product_info {
 		display: inline-block;
 	}
+
+	@media (min-width:320px ) {     
+		.c-sidebar {  		
+	    	width: calc(100% - 24px);
+	    	left: calc(-100% - 24px);   	
+		    &.-js-filter-active {
+		    			transition: left 0.3s linear;
+		    	left: 12px;
+		    }	    	
+		}
+	}    
+	@media (min-width:480px ) {   
+		.c-sidebar {  
+	    	width: calc(100% - 48px);
+	    	left: calc(-100% - 48px);
+		    &.-js-filter-active {
+		    			transition: left 0.3s linear;
+		    	left: 24px;
+		    }	    	
+	    }
+	}
+
+
+;
+
+
 	@media (min-width:320px) and (max-width:959px) { 
 		.c-sidebar {
 		    display: inline-block;
 		    position: absolute;
-		    width: calc(100% - 48px);
 		    height: 100vh;
-		    left: calc(-100% - 48px);
 		    top: 48px;
-		    z-index: 243;
+		    z-index: 5;
 		    padding: 0 !important;
-		    background: rgba(26,26,26,0.7);
-		    		transition: left 0.3s linear;
-		    &.-js-filter-active {
-		    			transition: left 0.3s linear;
-		    	left: 24px;
-		    }
+
+
 		}
 	}
 	@media (min-width:960px) { 
@@ -426,9 +446,22 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__wrap-inner
 
 .-js-c-category .c-filter {
 			@media (max-width:959px) { 
-	display: block;
-	position: relative;
-	z-index: 8
+    display: block;
+    position: relative;
+    z-index: 5;
+    background: url(../images/icons/valens-filter.svg) no-repeat;
+    height: 37px;
+    width: 100%;
+    padding: 4px;
+    background-position: 4px;
+    margin-bottom: 20px;
+    &:hover {
+    	cursor: pointer;
+    }
+    span {
+    	padding-left: 48px;
+    	color: #C1CC29;
+    }
 }
 }
 
@@ -439,7 +472,12 @@ html {
 		position: absolute;
     content: "";
     height: 100%;
-    width: calc(100vw - 48px);
+	@media (min-width:320px ) {     
+    	width: calc(100vw - 24px);
+	}    
+	@media (min-width:480px ) {     
+    	width: calc(100vw - 48px);
+	}
     background: rgba(26,26,26,0.7);
     transition: left 0.5s linear;
     z-index: 4;
@@ -454,12 +492,19 @@ html.-js-hfilter-active {
 		position: absolute;
     content: "";
     height: 100%;
-    width: calc(100vw - 48px);
-    background: rgba(26,26,26,0.7);
+	@media (min-width:320px ) {     
+    	width: calc(100vw - 24px);
+    	left: 12px;      	
+	}    
+	@media (min-width:480px ) {     
+    	width: calc(100vw - 48px);
+    	left: 24px;  
+	}
+    background: rgba(26,26,26,0.9);
     transition: left 0.2s linear;
     z-index: 4;
     top: 0;
-    left: 24px;
+
 }
 	}
 }

@@ -144,7 +144,7 @@
 }
 
 .c-services_practice {
-  background: #FCF7F1;
+  background: $colorSix;
       @media (min-width:320px) { 
      & {
   grid-column: col 1 / span 1;
@@ -173,7 +173,7 @@
 
 .c-services_customer-area {
 
-  background: #EDF6E5;
+  background: $colorFour;
       @media (min-width:320px) { 
      & {
   grid-column: col 1 / span 1;

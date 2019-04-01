@@ -193,3 +193,30 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .ec-likely__widget {
     bottom: 20px !important;
     right: 20px !important;
 }
+
+.product-details__top {
+	display: block !important;
+	.ec-breadcrumbs {
+		display: block !important;
+		a {
+			color: #46823C !important;
+		}
+		
+	}
+	.product-details__product-title {
+		display: none !important;
+
+	}
+}
+
+
+html#ecwid_html body#barba\-wrapper .ec-size .ec-store   .product-details__top .ec-breadcrumbs {
+		a.ec-link:nth-child(3),
+		span.breadcrumbs__delimiter.ec-text-muted:nth-child(2) {
+			display: none !important;
+		}		
+	a.ec-link {
+		color: #46823C !important;
+
+	}
+}

@@ -101,6 +101,13 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
 	.c-header_nav svg.icon-default path {
 		stroke: #2a2a2a !important;
 	}
+
+
+html#ecwid_html body#barba\-wrapper .ec-minicart__icon .icon-default circle[fill].cart-not-empty {
+	fill: #82B640 !important;
+}
+
+
 	.c-account-management_svg {
     	position: absolute;
     	top: 50%;
@@ -227,15 +234,21 @@ html#ecwid_html body#barba\-wrapper .ec-minicart--xs .ec-minicart__counter:hover
 
 
 .c-header_logo {
-  @media (min-width:320px) { 
-       max-width: 70px;
-        margin-right: 14px;
-  }  
-  @media (min-width:960px) { 
-	     max-width: 129px;
-        margin-right: 28px;
-  }
-
+  	@media (min-width:320px) { 
+		max-width: 70px;
+		margin-right: 14px;
+	&.-device {
+		display: inline-block;
+	}
+		
+  	}  
+  	@media (min-width:960px) { 
+		max-width: 129px;
+		margin-right: 28px;
+	&.-device {
+		display: none !important;
+	}			
+  	}
 	transition: max-width 0.2s linear;
 }
 
@@ -310,7 +323,7 @@ header {
     background: rgba(26,26,26,0.95);
     height: calc(100vh - #{$paddingOne * 2});
 	transition: top 0.5s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955), z-index 0s 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-	z-index: 4;
+	z-index: 6;
 	.c-menu_wra {
   @media (min-width:320px) {
     width: calc(100vw - #{$paddingThree * 2});
@@ -377,7 +390,7 @@ header {
 		display: block !important;
 	}
 }	
-			@media (min-width:960px) {	
+	@media (min-width:960px) {	
 	.c-device_link {
 		display: none !important;
 	}

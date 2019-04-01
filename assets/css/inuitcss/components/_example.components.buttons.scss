@@ -380,7 +380,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
 
 &.ecwid-btn--orders {
   @media (min-width:828px) {   
-margin-left:20px !important;
+    margin-left:20px !important;
 }
 height: 55px !important;      
 }
@@ -438,7 +438,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .grid-product__button .fo
 
 
 .ecwid-btn--primary {
-padding: 8px 12px !important;
+  padding: 8px 12px !important;
   border: 1px solid $colorTwo !important;
   background: transparent !important;
   min-width: 10px !important;
@@ -645,4 +645,28 @@ button.form-control__button.form-control__button--icon-center {
   &:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.8) !important;     
 }
+}
+
+
+
+
+.c-btn.c-btn--tertiary {
+@media (min-width:320px) { 
+    font-size: 13px !important;
+}  
+@media (min-width:375px) { 
+    font-size: 16px !important;
+}  
+@media (min-width:400px) { 
+    font-size: 20px !important;  
+}  
+@media (min-width:480px) { 
+    font-size: 24px !important;
+}
+}
+
+.c-banner_homepage_text {
+    .c-btn.c-btn--tertiary {
+      background-color: #82B640;
+    }
 }

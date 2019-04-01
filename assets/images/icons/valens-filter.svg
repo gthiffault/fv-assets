@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="29px" viewBox="0 0 32 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon-filtre-02</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000135677715 0.0003 31.5057837 0.0003 31.5057837 28.3913 0.000135677715 28.3913"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="items-visuel-web" transform="translate(-1461.000000, -1093.000000)">
+            <g id="icon-filtre-02" transform="translate(1461.000000, 1093.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M13.1968,16.0815 L13.1968,27.9145 C13.1968,28.1025 13.3018,28.2695 13.4738,28.3475 C13.5408,28.3805 13.6068,28.3915 13.6788,28.3915 C13.7898,28.3915 13.8958,28.3525 13.9838,28.2805 L18.1428,24.8255 C18.2538,24.7365 18.3148,24.5985 18.3148,24.4595 L18.3148,16.0815 L31.3908,0.7875 C31.5128,0.6435 31.5398,0.4435 31.4618,0.2775 C31.3848,0.1055 31.2128,-0.0005 31.0248,-0.0005 L0.4758,-0.0005 C0.2878,-0.0005 0.1208,0.1105 0.0438,0.2775 C-0.0342,0.4495 -0.0062,0.6485 0.1158,0.7875 L13.1968,16.0815 Z" id="Fill-1" fill="#C1CC29" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
