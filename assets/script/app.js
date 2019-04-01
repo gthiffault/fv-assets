@@ -1868,7 +1868,7 @@ if($('.c-delivery').length) {
       					infowindow.open(map);
       					        map.setCenter(new google.maps.LatLng(prout,prout2));
     				}
-  				})('<h5>' + editedPolygons[i][1].title + "</h5>" + '<p>JournÃƒÆ’Ã‚Â©e de livraison : ' + editedPolygons[i][1].deliveryDay + "</p>"));
+  				})('<h5>' + editedPolygons[i][1].title + "</h5>" + '<p>Journée de livraison : ' + editedPolygons[i][1].deliveryDay + "</p>"));
 			}
 
 			for (var i = 0; i < editedPolygons.length; i++) {
