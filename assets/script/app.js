@@ -2442,3 +2442,5 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 		$('.c-banner_homepage_content').innerHeight($(window).innerHeight() - 217);
 	}            	
 });
+
+}
