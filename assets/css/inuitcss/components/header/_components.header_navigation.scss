@@ -178,7 +178,7 @@ html#ecwid_html body#barba\-wrapper .ec-minicart__icon .icon-default circle[fill
     @media (min-width:320px) { 
         display: none;        
     }    
-    @media (min-width:960px) { 
+    @media (min-width:480px) { 
         display: inline-block;        
     }    
 		margin-left: 24px;
@@ -215,8 +215,7 @@ html#ecwid_html body#barba\-wrapper .ec-minicart__icon .icon-default circle[fill
 }
 
 
-.c-menu_main li.c-language-switcher a{
-    color: #FFF;
+.c-menu_main li.c-language-switcher a {
     transition: all 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
 }
@@ -240,15 +239,6 @@ html#ecwid_html body#barba\-wrapper .ec-minicart__icon .icon-default circle[fill
 	width: 100%;
 	background: #FFF;
 	z-index: 23424234
-	}
-}
-
-
-.c-menu_main {
-	li.c-language-switcher {
-		a {
-		color: #FFF;
-		}
 	}
 }
 
@@ -297,7 +287,12 @@ html#ecwid_html body#barba\-wrapper .ec-minicart__icon .icon-default circle[fill
 	    background: #FFF;
 	    margin-left: 0;
 	    z-index: 9;
-	    top: 66px;
+	    @media (min-width:480px) {
+	    	top: 48px;
+		}	    
+	    @media (min-width:1152px) {
+	    	top: 66px;
+		}
 	    border: 2px solid $colorTwo;
 	    li {
 	    	display: block;
@@ -322,7 +317,7 @@ html#ecwid_html body#barba\-wrapper .ec-minicart__icon .icon-default circle[fill
         display: none !important;
       }
     } 
-    @media (min-width:960px) { 
+    @media (min-width:480px) { 
       .c-header_nav_ul_am li.c-account-management {
         display: inline-block !important;
       }
