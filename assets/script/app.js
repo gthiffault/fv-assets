@@ -2448,6 +2448,6 @@ $(window).on('resize', function() {
 	if($(window).innerWidth() > 1024) {
 		$('html').removeClass('js-menu-active');
 	}	
-}
+});
 
 
