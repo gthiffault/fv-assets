@@ -2442,5 +2442,12 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 		$('.c-banner_homepage_content').innerHeight($(window).innerHeight() - 217);
 	}            	
 });
-
 }
+
+$(window).on('resize', function() {
+	if($(window).innerWidth() > 1024) {
+		$('html').removeClass('js-menu-active');
+	}	
+}
+
+
