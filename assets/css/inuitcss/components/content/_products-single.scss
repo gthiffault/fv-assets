@@ -217,6 +217,13 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store   .product-details__top .
 		}		
 	a.ec-link {
 		color: #46823C !important;
-
+		@media (min-width:320px) { 		
+		font-size: 16px !important;
+		margin-top: 4px !important;
+		}		
+		@media (min-width:600px) { 		
+		font-size: 20px !important;
+		margin-top: 8px !important;
+		}
 	}
 }

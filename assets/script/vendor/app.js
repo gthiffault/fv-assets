@@ -1844,7 +1844,7 @@ if($('.c-delivery').length) {
 						"color": colorFour,
 						"title": "Granby",
 						"latlng": "45.506995, -73.553766",
-						"deliveryDay" : "Vendredi"
+						"deliveryDay" : "Mercredi"
 					}
 				],
 			];

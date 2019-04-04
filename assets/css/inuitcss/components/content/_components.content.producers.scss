@@ -1,7 +1,7 @@
 .c-our-producers {
 	@include paddingZero();
 	.c-our-producers_wrap {
-		background: #EDF6E5;
+		background: $colorFive;
 		padding: 88px 0 108px;		
 		h2 {
 			text-align: center;

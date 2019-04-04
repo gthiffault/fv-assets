@@ -125,7 +125,7 @@ html#ecwid_html body#barba\-wrapper .ecwid .ecwid-btn--actionOK>span {
 .c-submit,
 .c-account-management,
 html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .form-control__button,
-.c-cart {
+li.c-cart {
 
     display: inline-block;
     vertical-align: middle;
@@ -200,13 +200,13 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
 .hamburger .hamburger-label
  {
   &:before {
-    background: #46823C;
+    background: $colorTwo;
     transition: background 0.2s 0.35s linear;
   }
 } 
   .c-account-management:before,
   .c-cart:before {
-    background: #46823C;
+    background: $colorTwo;
   }
 
 }
@@ -214,26 +214,13 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
 
 .c-submit {
 &:before {
-    background: #46823C;
+    background: $colorTwo;
 }
 }
 
 
 
 
-
-
-
-.homePage {
-.hamburger .hamburger-box,
-.hamburger .hamburger-label,
-.c-account-management,
-.c-cart {
-&:before {
-    background: #46823C;
-}
-}
-}
 
 
 .c-btn--tertiary,
@@ -272,7 +259,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
     left: 0;
     right: 0;
     bottom: 0;
-    background: #46823C;
+    background: $colorTwo;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 100%;
@@ -331,7 +318,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
       &.ecwid-btn--secondary-inverse{
           border: 1px solid $colorTwo !important;
           color: #FFF !important;
-          background: #82B640 !important;
+          background: #46823C !important;
             @media (min-width:320px) { 
           font-size: 14px !important;
           min-width: 0 !important;
@@ -520,7 +507,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
 .product-details-module.product-details__action-panel.details-product-purchase {
 .form-control__button {
   text-align: left !important;
-  background-color: #82B640 !important;
+  background-color: #46823C !important;
 }
 }
 
@@ -537,7 +524,7 @@ html#ecwid_html body#barba\-wrapper .ec-size .ec-store .form-control--primary .f
 .form-control.form-control--button.form-control--large.form-control--primary.form-control--flexible.details-product-purchase__checkout {
 .form-control__button {
   text-align: left !important;
-  background-color: #82B640 !important;
+  background-color: #46823C !important;
           &:after {
               background-position: -310px -13px !important;
           }     
@@ -667,6 +654,6 @@ button.form-control__button.form-control__button--icon-center {
 
 .c-banner_homepage_text {
     .c-btn.c-btn--tertiary {
-      background-color: #82B640;
+      background-color: #46823C;
     }
 }
