@@ -2447,6 +2447,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 $(window).on('resize', function() {
 	if($(window).innerWidth() > 1024) {
 		$('html').removeClass('js-menu-active');
+		$('.hamburger').removeClass('is-active');
 	}	
 });
 
