@@ -26,8 +26,14 @@
 				position: absolute;
 				content: "";
 				background: url('../images/icons/fleche-droite.svg');
+				@media (min-width:320px) { 	
+				width: 10px;
+				height: 19px;
+				}				
+				@media (min-width:720px) { 	
 				width: 16px;
 				height: 30px;
+				}
 				right: 16px;
 				top: 0;
 				background-size: cover !important;
