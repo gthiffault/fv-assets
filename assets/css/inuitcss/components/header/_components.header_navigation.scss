@@ -6,10 +6,10 @@
 
 
   @media (min-width:320px) {
-    padding: 40px  $paddingThree 24px $paddingThree;
+    padding: 40px  0 24px 0;
   }
   @media (min-width:480px) {
-    padding: 40px  $paddingTwo 24px $paddingTwo;
+    padding: 40px  0 24px 0;
   } 
   @media (min-width:1024px) {
     padding: 40px  0 24px 0;
@@ -362,6 +362,15 @@ header {
     width: 100vw;
         padding: 0 $paddingThree;
         padding-bottom: 64px;
+	a {
+		color: #D8D8D8;
+		font-size: 22px;
+		text-decoration: none;
+		&:hover {
+			color: #FFF;
+		}
+	}
+
   }
   @media (min-width:480px) {
     width: 100vw;
@@ -378,7 +387,7 @@ header {
 		margin: 0;
 		li {
 			@media (min-width:320px) {
-				margin-bottom: 24px;
+				margin-bottom: 16px;
 				display: block;
 				padding: 0;
 			}			
@@ -387,14 +396,7 @@ header {
 			}
 		}
 	}
-	a {
-		color: #D8D8D8;
-		font-size: 28px;
-		text-decoration: none;
-		&:hover {
-			color: #FFF;
-		}
-	}
+
 }
 }
 }

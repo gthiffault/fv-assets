@@ -1,6 +1,16 @@
 .c-content-delivery {
-	padding-right: $paddingOne;
-	padding-left: $paddingOne;	
+	@media (min-width:320px) {
+		padding-right: $paddingThree;
+		padding-left: $paddingThree;
+	}
+	@media (min-width:480px) {
+		padding-right: $paddingTwo;
+		padding-left: $paddingTwo;
+	}	
+	@media (min-width:1024px) {
+		padding-right: $paddingOne;
+		    padding-left: $paddingOne;	
+	}	
 	.c-background {
 		padding-top: 48px;
 		padding-bottom: 64px;
