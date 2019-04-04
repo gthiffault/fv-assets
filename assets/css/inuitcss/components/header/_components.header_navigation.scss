@@ -225,10 +225,10 @@ html#ecwid_html body#barba\-wrapper .ec-minicart__icon .icon-default circle[fill
 .c-header_nav {
 
   @media (min-width:320px) {
-  padding: 40px  $paddingThree 12px;
+  padding: 40px 0 12px;
   }
   @media (min-width:480px) {
-  padding: 40px  $paddingTwo 12px;
+  padding: 40px 0 12px;
   } 
   @media (min-width:1024px) {
   padding: 40px  0 12px;
@@ -347,7 +347,7 @@ header {
 
     top: 200vh;
     @media (min-width:320px) {
-    	padding-top: 140px;
+    	padding-top: 160px;
     	padding-bottom: 56px;
     }		    
     @media (min-width:960px) {
@@ -358,30 +358,54 @@ header {
 	transition: top 0.5s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955), z-index 0s 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	z-index: 6;
 	.c-menu_wra {
-  @media (min-width:320px) {
-    width: 100vw;
-        padding: 0 $paddingThree;
-        padding-bottom: 40px;
-
 	a {
 		color: #D8D8D8;
-		font-size: 22px;
 		text-decoration: none;
 		&:hover {
 			color: #FFF;
 		}
 	}
+
+
+
+  @media (min-width:320px) {
+    width: 100vw;
+        padding: 0 $paddingThree;
+        padding-bottom: 40px;
+	a {
+		font-size: 22px;
+	}
         .c-language-switcher {
         	a {
         		font-size: 18px;
         	}
-        }
-  }
+        }        
+  } 
+
   @media (min-width:480px) {
     width: 100vw;
         padding: 0 $paddingTwo;
         padding-bottom: 64px;
+	a {
+		font-size: 24px;
+	}
+        .c-language-switcher {
+        	a {
+        		font-size: 20px;
+        	}
+        }        
   } 
+  @media (min-width:720px) {
+	a {
+		font-size: 26px;
+	}
+        .c-language-switcher {
+        	a {
+        		font-size: 22px;
+        	}
+        }        
+  } 
+
   @media (min-width:1024px) {
     width: 100vw;
         padding: 0 $paddingOne;
@@ -395,10 +419,13 @@ header {
 				margin-bottom: 16px;
 				display: block;
 				padding: 0;
+			}		
+			@media (min-width:480px) {
+				margin-bottom: 24px;
 			}			
-			@media (min-width:960px) {
-				margin-bottom: 56px;
-			}
+			@media (min-width:720px) {
+				margin-bottom: 32px;
+			}						
 		}
 	}
 
