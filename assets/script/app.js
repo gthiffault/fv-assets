@@ -2424,6 +2424,8 @@ $('.c-filter').on('click',function() {
 
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+	$('window').on('load resize', function() {
 	if($(window)innerWidth() > 320) {
 		$('.c-banner').innerHeight($(window).innerHeight() - 158);
 		$('.c-banner_homepage ').innerHeight($(window).innerHeight() - 158);
@@ -2439,4 +2441,4 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 		$('.c-banner_homepage ').innerHeight($(window).innerHeight() - 217);
 		$('.c-banner_homepage_content').innerHeight($(window).innerHeight() - 217);
 	}            	
-}
+});
