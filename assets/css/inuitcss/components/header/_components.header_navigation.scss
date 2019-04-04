@@ -163,7 +163,6 @@ html#ecwid_html body#barba\-wrapper .ec-minicart__icon .icon-default circle[fill
 	}
 }
 .c-menu_main {
-	padding-bottom: 120px;
 	margin-bottom: 0;
 	z-index: 1;
     	@media (min-width:320px) { 
@@ -360,14 +359,17 @@ header {
   @media (min-width:320px) {
     width: 100vw;
         padding: 0 $paddingThree;
+        padding-bottom: 120px;
   }
   @media (min-width:480px) {
     width: 100vw;
         padding: 0 $paddingTwo;
+        padding-bottom: 120px;
   } 
   @media (min-width:1024px) {
     width: 100vw;
         padding: 0 $paddingOne;
+        padding-bottom: 120px;
   }
 	ul {
 		list-style-type: none;
