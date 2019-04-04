@@ -335,12 +335,14 @@ header {
 
   @media (min-width:320px) {
     width: 100vw;
+    display: block;
   }
   @media (min-width:480px) {
     width: 100vw;
   } 
   @media (min-width:1024px) {
     width: 100vw;
+    display: none;
   }
 
     top: 200vh;
