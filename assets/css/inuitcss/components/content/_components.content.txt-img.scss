@@ -102,13 +102,13 @@
 		.c-txt-img_txt_content {
 			background: $colorThree;
 	@media (min-width:320px) {
-		padding: $paddingOne $paddingThree 0 $paddingThree;
+		padding: $paddingOne 0 0 0;
 	}
 	@media (min-width:480px) {
-		padding: $paddingOne $paddingTwo 0 $paddingTwo;
+		padding: $paddingOne 0 0 0;
 	}	
 	@media (min-width:1024px) {
-		padding: $paddingOne;
+		padding: $paddingOne 0 0 0;
 	}
 			p:last-child {
 				margin-bottom:0;

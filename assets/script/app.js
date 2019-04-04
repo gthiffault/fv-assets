@@ -2393,28 +2393,7 @@ $(function () {
 
 
 
-var controller = new  ScrollMagic.Controller({globalSceneOptions: {triggerHook:"onLeave",duration:"100%"}});
-var controllerTwo = new  ScrollMagic.Controller({globalSceneOptions: {triggerHook:"onCenter",duration:"100%"}});
-var controllerThree = new  ScrollMagic.Controller({globalSceneOptions: {triggerHook:"onEnter",duration:"100%"}});
-	new ScrollMagic.Scene({triggerElement: ".homePage .c-txt-img_txt.-txt"})
-					.setTween(".homePage .c-txt-img_txt_content.-txt", {y: "16%", ease: Power4.easeNone})
-					.addIndicators()
-					.addTo(controllerTwo);
-
-	new ScrollMagic.Scene({triggerElement: ".homePage .c-txt-img_txt.-img"})
-					.setTween(".homePage .c-txt-img_txt_content.-img", {y: "16%", ease: Power4.easeNone})
-					.addIndicators()
-					.addTo(controllerTwo);	
-
-	new ScrollMagic.Scene({triggerElement: ".c-header"})
-					.setTween(".c-banner_homepage", {y: "12%", ease: Power4.easeNone})
-					.addIndicators()
-					.addTo(controller);
-
-	new ScrollMagic.Scene({triggerElement: ".c-banner c-border"})
-					.setTween(".c-banner_homepage_text_line-one", {y: "-140%", ease: Power4.easeNone})
-					.addIndicators()
-					.addTo(controller);															
+													
 
 $('.c-filter').on('click',function() {
 	$('.c-sidebar').toggleClass('-js-filter-active');
@@ -2442,6 +2421,29 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 		$('.c-banner_homepage_content').innerHeight($(window).innerHeight() - 217);
 	}            	
 });
+} else {
+var controller = new  ScrollMagic.Controller({globalSceneOptions: {triggerHook:"onLeave",duration:"100%"}});
+var controllerTwo = new  ScrollMagic.Controller({globalSceneOptions: {triggerHook:"onCenter",duration:"100%"}});
+var controllerThree = new  ScrollMagic.Controller({globalSceneOptions: {triggerHook:"onEnter",duration:"100%"}});
+	new ScrollMagic.Scene({triggerElement: ".homePage .c-txt-img_txt.-txt"})
+					.setTween(".homePage .c-txt-img_txt_content.-txt", {y: "16%", ease: Power4.easeNone})
+					.addIndicators()
+					.addTo(controllerTwo);
+
+	new ScrollMagic.Scene({triggerElement: ".homePage .c-txt-img_txt.-img"})
+					.setTween(".homePage .c-txt-img_txt_content.-img", {y: "16%", ease: Power4.easeNone})
+					.addIndicators()
+					.addTo(controllerTwo);	
+
+	new ScrollMagic.Scene({triggerElement: ".c-header"})
+					.setTween(".c-banner_homepage", {y: "12%", ease: Power4.easeNone})
+					.addIndicators()
+					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: ".c-banner c-border"})
+					.setTween(".c-banner_homepage_text_line-one", {y: "-140%", ease: Power4.easeNone})
+					.addIndicators()
+					.addTo(controller);			
 }
 
 $(window).on('resize', function() {
