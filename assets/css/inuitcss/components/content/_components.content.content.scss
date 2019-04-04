@@ -9,9 +9,13 @@ section.c-content {
     top: 0;
     right: 0;
 	@media (min-width:320px) {
-		padding-right: 0;
-		padding-left: 0;
+		padding-right: $paddingThree;
+		padding-left: $paddingThree;
 	}
+	@media (min-width:480px) {
+		padding-right: $paddingTwo;
+		padding-left: $paddingTwo;
+	}	
 	@media (min-width:1024px) {
 		    position: absolute;
 		padding-right: $paddingOne;
