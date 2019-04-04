@@ -586,25 +586,25 @@ background: rgba(26,26,26,0.7);
 }
 
 body {
-	position: relative;
-	&:before {
-    position: fixed;
-    content: "";
-    height: $paddingOne;
-    width: 100%;
-    background: #FFF;
-    top: 0;
-    z-index: 21234;
-	}
-  &:after {
-    position: fixed;
-    content: "";
-    height: $paddingOne;
-    width: 100%;
-    background: #FFF;
-    bottom: 0;
-    z-index: 21234;
-  }  
+	// position: relative;
+	// &:before {
+ //    position: fixed;
+ //    content: "";
+ //    height: $paddingOne;
+ //    width: 100%;
+ //    background: #FFF;
+ //    top: 0;
+ //    z-index: 21234;
+	// }
+ //  &:after {
+ //    position: fixed;
+ //    content: "";
+ //    height: $paddingOne;
+ //    width: 100%;
+ //    background: #FFF;
+ //    bottom: 0;
+ //    z-index: 21234;
+ //  }  
 }
 
 
