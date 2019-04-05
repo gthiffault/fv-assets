@@ -24,7 +24,8 @@
 	position: relative;
 	.c-txt-img_img {
 		&.-page,
-		&.-about {
+		&.-about,
+		&.-quality {
 			height: 766px;
 			.o-wrap-zero {
 				position: absolute;
@@ -35,6 +36,9 @@
 		&.-about {
 			background-position: right center !important;
 		}
+		&.-quality {
+			background-position: center center !important;
+		}		
 		&.-delivery {
 			height: 859px;
 			.o-wrap-zero {

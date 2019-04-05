@@ -2160,7 +2160,6 @@ if($('.c-contact-us').length) {
 		          mouseWheelPixels: 80,
 		          scrollInertia: 0
 		        });
-
 		    },300);
 
 
